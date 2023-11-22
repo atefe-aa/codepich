@@ -1,0 +1,8 @@
+.bgMainPage {
+    background: url("/public/assets/img/backgound.svg");
+    background-position: bottom;
+    background-size: cover;
+    height: 100vh;
+    overflow-x: hidden;
+    color: #fff;
+  }
