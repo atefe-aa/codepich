@@ -1,0 +1,42 @@
+.header{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 100;
+    color: #D5D5D5;
+    width: 100%;
+   }
+
+
+  .ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .ul li{
+    font-size: 1.3rem;
+    font-weight:bolder;
+  }
+
+  .logo{
+    margin: 0 auto;
+  }
+  .logoImg{
+    width: 100px;
+  }
+
+  .headerLine{
+    background-color: #D5D5D5;
+    height: 2px;
+    border-radius:9px;
+  }
+
+  .headerLineSmall{
+    width: 10.5%;
+  }
+  .headerLineBig{
+    width: 25%;
+  }

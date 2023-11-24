@@ -1,25 +1,49 @@
+import { Link } from "react-router-dom";
+import styles from "./Header.module.css";
+
 function Header() {
-    return (
-      
-        <header className="w-100 pt-4">
-          <div className="container header-container">
-            <div className="row h-100">
-              <div className="col-12 d-flex justify-content-between h-100 align-items-center">
-                <nav>
-                  <ul className="menu h-100 d-flex align-items-center p-0 pb-3 m-0">
-                    <li className="item-menu">خدمات</li>
-                    <li className="item-menu">فرآیند</li>
-                    <li className="item-menu">چرا ما؟</li>
-                  </ul>
-                </nav>
-                <img src="assets/img/logo-white.svg" alt="logo-codepich" />
-                <a className="ctn team-cv pb-3">رزومه تیم</a>
-              </div>
-            </div>
-          </div>
-     
-        </header>
-    )
+  return (
+    <header className={styles.header}>
+          <ul className={styles.ul}>
+            <li className={styles.headerLineSmall}>
+              <div className={styles.headerLine}></div>
+            </li>
+            <li>
+              <Link to="services">خدمات</Link>
+            </li>
+            <li className={styles.headerLineSmall}>
+              <div className={styles.headerLine}></div>
+            </li>
+
+            <li>
+              <Link to="process">فرآیند</Link>
+            </li>
+            <li className={styles.headerLineSmall}>
+              <div className={styles.headerLine}></div>
+            </li>
+            <li style={{width:'min-content'}}>
+              <Link to="why-us">درباره</Link>
+            </li>
+            <li className={styles.headerLineSmall}>
+              <div className={styles.headerLine}></div>
+            </li>
+            <li className="logo">
+              <Link to="/">
+                <img src="assets/img/logo-white.svg" className={styles.logoImg} alt="logo-codepich" />
+              </Link>
+            </li>
+            <li className={styles.headerLineBig}>
+              <div className={styles.headerLine}></div>
+            </li>
+            <li style={{width:'min-content'}}>
+              <Link to="team-cv">رزومه</Link>
+            </li>
+            <li className={styles.headerLineBig}>
+              <div className={styles.headerLine}></div>
+            </li>
+          </ul>
+    </header>
+  );
 }
 
-export default Header
+export default Header;
