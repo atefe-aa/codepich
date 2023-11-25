@@ -17,6 +17,7 @@
   }
 
   .ul li{
+  
     font-size: 1.3rem;
     font-weight:bolder;
   }
@@ -39,4 +40,11 @@
   }
   .headerLineBig{
     width: 25%;
+  }
+
+  @media screen and (max-width: 840px) {
+    .ul{
+      display: none;
+    }
+
   }

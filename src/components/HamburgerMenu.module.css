@@ -1,0 +1,34 @@
+.itemsDiv {
+    padding: 20px 25px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(210, 210, 210, 0.3);
+    position: absolute;
+    top: 10px;
+  }
+  
+  .closeButton{
+    border:none;
+    background: none;
+  }
+  .closeButton img{
+    width: 20px;
+  }
+  .itemsDiv li {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #efefefa4;
+  }
+  .itemsDiv li:hover{
+    font-size: larger;
+  }
+  .itemsDiv li:last-child{
+    border:none;
+  }
+  .itemMenu {
+    padding: 0 25px;
+    cursor: pointer;
+  }

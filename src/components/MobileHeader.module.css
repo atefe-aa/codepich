@@ -1,0 +1,35 @@
+.mobileHeader {
+  display: none;
+  align-items: center;
+  width: 100%;
+}
+.logo{
+  margin: 0 auto;
+}
+.logoImg{
+  width: 100px;
+}
+
+.hamburger {
+  cursor: pointer;
+  border: none;
+  background: none;
+  margin-right: 30px;
+  /* width: 33%; */
+}
+.hamburger img {
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (max-width: 840px) {
+  .mobileHeader {
+    display: flex;
+  }
+  .logoImg {
+    width: 60px;
+  }
+  .resume {
+    margin-left: 50px;
+  }
+}

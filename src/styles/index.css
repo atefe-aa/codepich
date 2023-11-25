@@ -1,25 +1,25 @@
 /* Define Fonts */
 @font-face {
   font-family: "estedad-exb";
-  src: url("/public/fonts/Estedad-ExtraBold.woff2");
+  src: url("../fonts/Estedad-ExtraBold.woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "estedad-b";
-  src: url("/public/fonts/Estedad-Bold.woff2");
+  src: url("../fonts/Estedad-Bold.woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "estedad-m";
-  src: url("/public/fonts/Estedad-Medium.woff2");
+  src: url("../fonts/Estedad-Medium.woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "estedad-r";
-  src: url("/public/fonts/Estedad-Regular.woff2");
+  src: url("../fonts/Estedad-Regular.woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -36,6 +36,7 @@
 ul,
 li {
   list-style: none;
+  /* display: inline-block; */
 }
 
 a {
@@ -47,4 +48,441 @@ a:hover {
   color: inherit;
 }
 /* Start General Style */
+.h-60 {
+  height: 60%;
+}
 
+.bg-main-page {
+  background: url("../img/backgound.svg");
+  background-position: bottom;
+  background-size: cover;
+  color: #fff;
+}
+
+/* ! .header::before TO Fix bug of the project ! */
+/* .header::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 65px;
+  z-index: 5;
+} */
+
+.team-cv {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.pt-6 {
+  padding-top: 6rem;
+}
+
+.header-container {
+  height: 100px;
+}
+
+
+
+/* img[alt="logo-codepich"] {
+  width: 100px;
+  margin-right: -200px;
+} */
+
+.header-title {
+  font-family: "estedad-exb";
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.header-description {
+  margin: 12px 0;
+  font-family: "estedad-m";
+}
+
+.services {
+  background: url("../img/img-322.svg");
+  padding: 3% 4% 6% 4%;
+}
+
+.about-us-para {
+  font-size: 14px;
+  border-right: 2px solid #fff;
+  padding-right: 15px;
+  line-height: 24.4px;
+  margin: 0 20px 0 100px;
+}
+
+.img-with-border {
+  border: 2px solid #efefef;
+  border-radius: 50%;
+  padding: 13px;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+}
+
+/* Media query */
+@media all and (max-width: 580px) {
+  .header-title {
+    font-size: 22px;
+  }
+
+  .header-description {
+    font-size: 13px;
+  }
+
+  .about-us-section-p {
+    width: 90%;
+    margin: 10px auto;
+    font-size: 13px;
+  }
+
+  .text-top h1 {
+    font-family: "estedad-b";
+    font-size: 20px;
+  }
+
+  .text-top p {
+    font-size: 10.5px;
+  }
+}
+
+@media all and (max-width: 391px) {
+  img[alt="web-design-img"] {
+    margin-top: 31%;
+  }
+
+  .content-section {
+    margin-top: 66px !important;
+    margin-bottom: -66px !important;
+  }
+
+  .header-title {
+    font-size: 18px;
+  }
+
+  .header-description {
+    font-size: 11px;
+  }
+
+  .about-us-section-p {
+    width: 90%;
+    margin: 8px auto;
+    font-size: 11px;
+  }
+
+  .content-section {
+    margin-top: 20px;
+  }
+
+  .text-top h1 {
+    font-family: "estedad-b";
+    font-size: 19px;
+  }
+
+  .text-top p {
+    font-size: 10px;
+  }
+}
+
+/* ?ABout Us Section */
+.about-us-section,
+.bg-team-cv {
+  background: url("../img/background-about-us.svg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  width: 103vw !important;
+  margin: 0 -6px;
+  overflow-x: hidden;
+}
+
+.about-us-section-p {
+  font-size: 15px;
+  padding-right: 15px;
+  line-height: 24.4px;
+  margin: 0 20px 0 100px;
+}
+
+.title-section {
+  font-family: "estedad-b";
+  font-size: 20px;
+  margin-right: 60px;
+}
+
+.title-section::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: #fff;
+  top: 50%;
+  right: -25px;
+  border-radius: 10px;
+}
+
+/* ?Slider */
+.swiper {
+  width: 90%;
+  height: 500px;
+  margin: 40px auto;
+}
+
+.mySwiper {
+  height: 100%;
+  width: 85%;
+  margin: auto;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.swiper-slide:nth-child(2n) {
+  background-color: rgb(0, 140, 255);
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: rgb(10, 184, 111);
+}
+
+.swiper-slide:nth-child(4n) {
+  background-color: rgb(211, 122, 7);
+}
+
+.swiper-slide:nth-child(5n) {
+  background-color: rgb(118, 163, 12);
+}
+
+.swiper-slide:nth-child(6n) {
+  background-color: rgb(180, 10, 47);
+}
+
+.swiper-slide:nth-child(7n) {
+  background-color: rgb(35, 99, 19);
+}
+
+.swiper-slide:nth-child(8n) {
+  background-color: rgb(0, 68, 255);
+}
+
+.swiper-slide:nth-child(9n) {
+  background-color: rgb(218, 12, 218);
+}
+
+.swiper-slide:nth-child(10n) {
+  background-color: rgb(54, 94, 77);
+}
+/* ?Contact-us */
+.bg-contact-us {
+  background: url("../img/background-contact-us.svg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  overflow-x: hidden;
+  color: #fff;
+  width: 105vw;
+  padding: 0;
+  margin: 0 -6px;
+}
+
+.form-title {
+  font-size: 16px;
+  font-family: "estedad-b";
+  margin: 30px 6px 20px;
+  display: inline-block;
+}
+
+.input-div {
+  margin-bottom: 10px;
+}
+
+.input-div input {
+  width: 65%;
+  height: 45px;
+  background: transparent;
+  outline: none;
+  border: 1px solid #fff;
+  border-radius: 13px;
+  color: #fff;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+input::-webkit-input-placeholder {
+  color: #fff !important;
+}
+
+.form button {
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 8px 10px 10px;
+  width: 65%;
+  height: 45px;
+  border-radius: 13px;
+  transition: all 300ms ease;
+}
+
+.form button:hover {
+  color: #000;
+  background: #fff;
+}
+/* ?Contact-us page */
+.contact-us-page {
+  background: url("../img/background-about-us.svg");
+  background-position: center;
+  background-size: cover;
+  width: 101vw;
+  overflow-x: hidden;
+  margin-right: -6px;
+  color: #fff;
+}
+
+.form-contact-us-page {
+  padding: 40px 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(210, 210, 210, 0.3);
+}
+
+.form-page input#name-input,
+.form-page input#phone-input {
+  width: 100% !important;
+  margin: 15px 0 !important;
+}
+
+.input-div-special {
+  width: 50%;
+}
+
+.form-page input {
+  width: 100%;
+  margin: 5px 0;
+  direction: rtl;
+}
+
+#description {
+  width: 100%;
+  border-radius: 12px;
+  background: transparent;
+  border: 1px solid #fff;
+  outline: none;
+  margin: 0 4px;
+  height: 150px;
+  padding: 20px;
+  color: #fff;
+  margin: 0;
+}
+
+#description::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 14px;
+}
+
+.form-page button {
+  width: 100%;
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 8px 10px 10px;
+  height: 45px;
+  border-radius: 13px;
+  transition: all 300ms ease;
+}
+
+.text-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 80px 0 -30px;
+}
+
+@media all and (max-width: 768px) {
+  .item-menu {
+    display: none;
+  }
+
+  .bar-li {
+    display: block !important;
+  }
+
+  .bar-li span {
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+  img[alt="logo-codepich"] {
+    margin-right: 30px;
+  }
+
+  .contact-page .row {
+    padding-right: 26px !important;
+    padding-left: 20px !important;
+  }
+
+  
+  .services {
+    background: url(../img/img-322.svg);
+    padding: 3% 4% 6% 4%;
+    margin-top: -280px;
+  }
+
+  .about-us-para {
+    font-size: 11px;
+    border-right: 2px solid #fff;
+    padding-right: 15px;
+    line-height: 24.4px;
+    margin: 0 0 20px 0;
+  }
+
+  .row-div {
+    margin-top: 140px;
+    width: 120vw;
+    margin-right: -14vw;
+  }
+
+  .about-us-section .container {
+    padding-top: 130px !important;
+  }
+
+  .bg-contact-us .col-12 {
+    padding-top: 140px;
+  }
+
+  .div-about-team {
+    margin: 0 0 10px 0 !important;
+  }
+}
+
+.services-div {
+  position: absolute;
+  bottom: -50px;
+}
+
+.div-about-team {
+  margin: 100px 0 -100px 0;
+}
+
+.header {
+  position: fixed;
+  z-index: 999;
+  color: #fff;
+}
+
+.fp-overflow {
+  overflow-y: visible !important;
+}
