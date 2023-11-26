@@ -28,3 +28,4 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         build-dir: ./dist
         server-dir: /public_html/
+        dangerous-clean-slate: true
