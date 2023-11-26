@@ -26,5 +26,5 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        build-dir: ./dist/
+        build-dir: /dist
         server-dir: /public_html/
