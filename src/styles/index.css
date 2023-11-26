@@ -123,12 +123,6 @@ a:hover {
     font-size: 13px;
   }
 
-  .about-us-section-p {
-    width: 90%;
-    margin: 10px auto;
-    font-size: 13px;
-  }
-
   .text-top h1 {
     font-family: "estedad-b";
     font-size: 20px;
@@ -156,13 +150,6 @@ a:hover {
   .header-description {
     font-size: 11px;
   }
-
-  .about-us-section-p {
-    width: 90%;
-    margin: 8px auto;
-    font-size: 11px;
-  }
-
   .content-section {
     margin-top: 20px;
   }
@@ -177,8 +164,7 @@ a:hover {
   }
 }
 
-/* ?ABout Us Section */
-.about-us-section,
+
 .bg-team-cv {
   background: url("assets/img/background-about-us.svg");
   background-position: center;
@@ -190,29 +176,7 @@ a:hover {
   overflow-x: hidden;
 }
 
-.about-us-section-p {
-  font-size: 15px;
-  padding-right: 15px;
-  line-height: 24.4px;
-  margin: 0 20px 0 100px;
-}
 
-.title-section {
-  font-family: "estedad-b";
-  font-size: 20px;
-  margin-right: 60px;
-}
-
-.title-section::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 2px;
-  background: #fff;
-  top: 50%;
-  right: -25px;
-  border-radius: 10px;
-}
 
 /* ?Slider */
 .swiper {
@@ -424,32 +388,19 @@ input::-webkit-input-placeholder {
     padding-left: 20px !important;
   }
 
-
- 
-
   .row-div {
     margin-top: 140px;
     width: 120vw;
     margin-right: -14vw;
   }
 
-  .about-us-section .container {
-    padding-top: 130px !important;
-  }
-
   .bg-contact-us .col-12 {
     padding-top: 140px;
   }
-
-  .div-about-team {
-    margin: 0 0 10px 0 !important;
-  }
 }
 
 
-.div-about-team {
-  margin: 100px 0 -100px 0;
-}
+
 
 .header {
   position: fixed;

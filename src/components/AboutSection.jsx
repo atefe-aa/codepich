@@ -1,16 +1,18 @@
+import styles from "./AboutSection.module.css"
+
 function AboutSection() {
   return (
-    <section className="section about-us-section w-100 container-fluid">
+    <section className={`section w-100 container-fluid ${styles.aboutUsSection}`}>
       <div className="container">
-        <div className="row content-header h-auto pt-5">
+        <div className="row content-header pt-5">
           <div className="row h-100">
             <div className="col-12 h-100 d-flex justify-content-center align-items-end">
               <div className="row">
-                <div className="col-12 col-md-6 div-about-team">
-                  <h6 className="title-section position-relative">
+                <div className={`col-12 col-md-6 ${styles.divAboutTeam}`}>
+                  <h6 className= {`position-relative ${styles.titleSection}`}>
                     درباره کدپیچ
                   </h6>
-                  <p className="about-us-section-p">
+                  <p className={styles.aboutUsSectionP}>
                     ایین یک ممتن نمون استایین یک متن نمون استایین یک متن نمون
                     استایین یک متن نمون استایین یک متن نمون استایین یک متن نمون
                     استایین یک متن نمون استایین یک متن نمون استایین یک متن نمون
@@ -23,9 +25,9 @@ function AboutSection() {
         </div>
 
         <div className="row content-header h-auto">
-          <div className="col-12 h-100 d-flex justify-content-center align-items-start">
+          <div className="">
             <div className="row">
-              <div className="col-12 col-lg-9 offset-0 offset-lg-3">
+              <div className="col-12 col-lg-12 offset-0 offset-lg-3">
                 <img
                   src="assets/img/img-services.svg"
                   alt="web-design-img"

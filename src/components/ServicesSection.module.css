@@ -1,18 +1,20 @@
-  
-  .services {
-position: absolute;
-  }
-  .servicesDiv {  
-    background: url(assets/img/img-322.svg); 
-     padding: 3% 4% 6% 4%;
-    position: relative;
-    /* bottom: 10px; */
+.servicesDiv {
+  background: url(assets/img/img-322.svg);
+  padding: 3% 4% 6% 4%;
+}
+
+
+@media all and (max-width: 768px) {
+  .aboutUsPara {
+    font-size: 11px;
+    margin: 0 0 20px 0;
   }
 
+}
 .aboutUsPara {
-    font-size: 14px;
-    border-right: 2px solid #fff;
-    padding-right: 15px;
-    line-height: 24.4px;
-    margin: 0 20px 0 100px;
-  }
+  font-size: 14px;
+  border-right: 2px solid #fff;
+  padding-right: 15px;
+  line-height: 24.4px;
+  margin: 0 20px 0 100px;
+}

@@ -4,9 +4,9 @@ import styles from "./ServicesSection.module.css";
 function ServicesSection() {
   return (
     <div
-      className={`container-fluid  h-auto ${styles.servicesDiv}`}
+      className={styles.servicesDiv}
     >
-      <div className="row h-100 div-row">
+      <div className="row">
         <div className="col-12 col-md-7 d-flex justify-content-center align-items-center h-100">
           <p className={styles.aboutUsPara}>
             تیم کدپیچ فعالیت خود را از ۱۴۰۲ با تلاش بسیار و پشتکار در حوزه وب
@@ -18,9 +18,9 @@ function ServicesSection() {
             را ثبت کنید.
           </p>
         </div>
-        <div className="col-12 col-md-5 col-div">
-          <div className="row h-100 row-div">
-            <div className="col-10 offset-1 d-flex justify-content-evenly align-items-center h-100">
+        <div className="col-12 col-md-5 mt-4 ">
+          <div className="row h-100">
+            <div className="col-10 offset-1 d-flex justify-content-evenly align-items-center ">
               <Service
                 src="assets/img/code.svg"
                 alt="code-icon"
