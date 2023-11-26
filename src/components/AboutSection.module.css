@@ -10,7 +10,7 @@
   
 }
 .aboutUsSection {
-  background: url("assets/img/background-about-us.svg");
+  background: url("/assets/img/background-about-us.svg");
   background-position: center;
   background-size: cover;
   height: 100vh;
