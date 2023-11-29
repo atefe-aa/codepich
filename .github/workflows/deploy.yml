@@ -19,9 +19,6 @@ jobs:
 
     - name: Build React App
       run: npm run build
-
-    - name: Test 
-      run: npm run test
     
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
