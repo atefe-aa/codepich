@@ -1,0 +1,6 @@
+.footer{
+    background-image: url('/assets/img/bg-footer.svg');
+    background-size: cover;
+    background-position: center top;
+    color: aliceblue;
+}

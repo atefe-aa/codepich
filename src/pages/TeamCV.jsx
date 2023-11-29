@@ -1,4 +1,3 @@
-import Form from "../components/Form";
 
 function TeamCV() {
   return (
@@ -144,24 +143,6 @@ function TeamCV() {
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section className="section container-fluid content-header bg-contact-us">
-        <div className="row">
-          <div className="position-absolute pt-5 end-0 start-0 p-0">
-            <div className="col-12 d-flex justify-content-center p-0">
-              <h4>ما دوست داریم درمورد محصول یا ایده شما بشنویم</h4>
-            </div>
-            <div className="col-12 d-flex justify-content-center my-4 p-0">
-              <button type="button" className="btn btn-outline-light p-5 py-3">
-                تماس با ما
-              </button>
-            </div>
-          </div>
-          <div className="w-100" style={{height: "100px"}}></div>
-          <div className="col-12 col-md-6 mt-md-5 mx-5 mx-md-5">
-            <Form />
           </div>
         </div>
       </section>
