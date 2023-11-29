@@ -1,4 +1,3 @@
-import Form from "../components/Form";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -11,7 +10,6 @@ import "swiper/css/navigation";
 import { EffectCards, Navigation } from "swiper/modules";
 import { Element } from "react-scroll";
 
-
 function Home() {
   return (
     <main>
@@ -19,9 +17,7 @@ function Home() {
         <section className="section active container-fluid content-header bg-main-page h-100">
           <div className="row h-100">
             <div className="col-12 d-flex justify-content-center align-items-center flex-column h-100">
-              <h1
-                className="header-title"
-              >
+              <h1 className="header-title">
                 کدپیچ | طراحی وبسایت کارآمد مثل پیچ
               </h1>
               <span
