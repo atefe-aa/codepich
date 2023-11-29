@@ -51,12 +51,13 @@ a:hover {
   height: 60%;
 }
 
-.bg-main-page {
+/* .bg-main-page {
   background: url("/assets/img/backgound.svg");
-  background-position: bottom;
+  background-position: center top;
   background-size: cover;
   color: #fff;
-}
+  height: 500px;
+} */
 
 /* ! .header::before TO Fix bug of the project ! */
 /* .header::before {
@@ -92,38 +93,7 @@ a:hover {
   margin-right: -200px;
 } */
 
-.header-title {
-  font-family: "estedad-exb";
-  font-size: 30px;
-  margin-bottom: 12px;
-}
 
-.header-description {
-  margin: 12px 0;
-  font-family: "estedad-m";
-}
-
-.services {
-  background: url("/assets/img/img-322.svg");
-  padding: 3% 4% 6% 4%;
-}
-
-.about-us-para {
-  font-size: 14px;
-  border-right: 2px solid #fff;
-  padding-right: 15px;
-  line-height: 24.4px;
-  margin: 0 20px 0 100px;
-}
-
-.img-with-border {
-  border: 2px solid #efefef;
-  border-radius: 50%;
-  padding: 13px;
-  width: 70px;
-  height: 70px;
-  cursor: pointer;
-}
 
 /* Media query */
 @media all and (max-width: 580px) {
@@ -131,15 +101,7 @@ a:hover {
     font-size: 22px;
   }
 
-  .header-description {
-    font-size: 13px;
-  }
 
-  .about-us-section-p {
-    width: 90%;
-    margin: 10px auto;
-    font-size: 13px;
-  }
 
   .text-top h1 {
     font-family: "estedad-b";
@@ -165,15 +127,6 @@ a:hover {
     font-size: 18px;
   }
 
-  .header-description {
-    font-size: 11px;
-  }
-
-  .about-us-section-p {
-    width: 90%;
-    margin: 8px auto;
-    font-size: 11px;
-  }
 
   .content-section {
     margin-top: 20px;
@@ -189,101 +142,7 @@ a:hover {
   }
 }
 
-/* ?ABout Us Section */
-.about-us-section,
-.bg-team-cv {
-  background: url("/assets/img/background-about-us.svg");
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  color: #fff;
-  width: 103vw !important;
-  margin: 0 -6px;
-  overflow-x: hidden;
-}
 
-.about-us-section-p {
-  font-size: 15px;
-  padding-right: 15px;
-  line-height: 24.4px;
-  margin: 0 20px 0 100px;
-}
-
-.title-section {
-  font-family: "estedad-b";
-  font-size: 20px;
-  margin-right: 60px;
-}
-
-.title-section::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 2px;
-  background: #fff;
-  top: 50%;
-  right: -25px;
-  border-radius: 10px;
-}
-
-/* ?Slider */
-.swiper {
-  width: 90%;
-  height: 500px;
-  margin: 40px auto;
-}
-
-.mySwiper {
-  height: 100%;
-  width: 85%;
-  margin: auto;
-}
-
-.swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 18px;
-  font-size: 22px;
-  font-weight: bold;
-  color: #fff;
-}
-
-.swiper-slide:nth-child(2n) {
-  background-color: rgb(0, 140, 255);
-}
-
-.swiper-slide:nth-child(3n) {
-  background-color: rgb(10, 184, 111);
-}
-
-.swiper-slide:nth-child(4n) {
-  background-color: rgb(211, 122, 7);
-}
-
-.swiper-slide:nth-child(5n) {
-  background-color: rgb(118, 163, 12);
-}
-
-.swiper-slide:nth-child(6n) {
-  background-color: rgb(180, 10, 47);
-}
-
-.swiper-slide:nth-child(7n) {
-  background-color: rgb(35, 99, 19);
-}
-
-.swiper-slide:nth-child(8n) {
-  background-color: rgb(0, 68, 255);
-}
-
-.swiper-slide:nth-child(9n) {
-  background-color: rgb(218, 12, 218);
-}
-
-.swiper-slide:nth-child(10n) {
-  background-color: rgb(54, 94, 77);
-}
 /* ?Contact-us */
 .bg-contact-us {
   background: url("/assets/img/background-contact-us.svg");
@@ -454,37 +313,18 @@ input::-webkit-input-placeholder {
     border-bottom: 1px solid #efefef;
   }
 
-  .services {
-    background: url(/assets/img/img-322.svg);
-    padding: 3% 4% 6% 4%;
-    margin-top: -280px;
-  }
 
-  .about-us-para {
-    font-size: 11px;
-    border-right: 2px solid #fff;
-    padding-right: 15px;
-    line-height: 24.4px;
-    margin: 0 0 20px 0;
-  }
-
-  .row-div {
+  /* .row-div {
     margin-top: 140px;
     width: 120vw;
     margin-right: -14vw;
-  }
+  } */
 
-  .about-us-section .container {
-    padding-top: 130px !important;
-  }
+ 
 
   .bg-contact-us .col-12 {
     padding: 14px 0 0 0;
     padding-right: 0 !important;
-  }
-
-  .div-about-team {
-    margin: 0 0 10px 0 !important;
   }
 
   .aboutus-section {
@@ -512,14 +352,8 @@ input::-webkit-input-placeholder {
   }
 }
 
-.services-div {
-  position: absolute;
-  bottom: -50px;
-}
 
-.div-about-team {
-  margin: 100px 0 -100px 0;
-}
+
 
 /* .header {
   position: fixed;

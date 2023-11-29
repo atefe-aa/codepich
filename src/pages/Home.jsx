@@ -1,3 +1,5 @@
+import styles from "../styles/Home.module.css";
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -14,14 +16,16 @@ function Home() {
   return (
     <main>
       <Element name="section1">
-        <section className="section active container-fluid content-header bg-main-page h-100">
+        <section
+          className={`container-fluid content-header ${styles.bgMainPage}`}
+        >
           <div className="row h-100">
             <div className="col-12 d-flex justify-content-center align-items-center flex-column h-100">
-              <h1 className="header-title">
+              <h1 className={styles.header_title}>
                 کدپیچ | طراحی وبسایت کارآمد مثل پیچ
               </h1>
               <span
-                className="header-description"
+                className={styles.header_description}
                 data-aos="fade-up"
                 data-aos-duration="1000"
               >
@@ -32,22 +36,17 @@ function Home() {
         </section>
       </Element>
       <Element name="section2">
-        <section className="section container-fluid content-header bg-main-page p-0">
-          <div className="row h-100">
-            <div className="col-12 d-flex justify-content-center align-items-center flex-column h-100">
-              <h1 className="header-title">
-                کدپیچ | طراحی وبسایت کارآمد مثل پیچ
-              </h1>
-              <span className="header-description">
-                با کدپیچ وبسایت پرفروش و کارآمد مانند پیچ را تجربه کنید
-              </span>
-            </div>
-          </div>
-
-          <div className="container-fluid services services-div h-auto">
-            <div className="row h-100 div-row">
+        <section
+          className={`section container-fluid content-header p-0 ${styles.bgServices}`}
+        >
+          <div
+            className={`container-fluid  ${styles.services_div}`}
+          >
+            <div className="row h-100">
               <div className="col-12 col-md-7 d-flex justify-content-center align-items-center h-100">
-                <p className="about-us-para about-us-footer">
+                <p
+                  className={styles.about_us_para}
+                >
                   تیم کدپیچ فعالیت خود را از ۱۴۰۲ با تلاش بسیار و پشتکار در حوزه
                   وب شروع کرده و تا کنون موفق به انجام چند پروژه در این مدت بوده
                   است. تیم کدپیچ ۴ عضو دارد و با پشتیبانی ۲۴ ساعته اماده به
@@ -58,10 +57,10 @@ function Home() {
                 </p>
               </div>
               <div className="col-12 col-md-5 col-div">
-                <div className="row h-100 row-div">
+                <div className="row h-100">
                   <div className="col-10 offset-1 d-flex justify-content-evenly align-items-center h-100">
-                    <div className="services d-flex justify-content-around align-items-center flex-column">
-                      <div className="img-with-border d-flex justify-content-around align-items-center">
+                    <div className= {`d-flex justify-content-around align-items-center flex-column ${styles.services}`}>
+                      <div className= {`d-flex justify-content-around align-items-center ${styles.img_with_border}`}>
                         <img
                           src="../assets/img/code.svg"
                           alt="code-icon"
@@ -71,8 +70,8 @@ function Home() {
                       <span>Website</span>
                     </div>
 
-                    <div className="services d-flex justify-content-around align-items-center flex-column">
-                      <div className="img-with-border d-flex justify-content-around align-items-center">
+                    <div className= {`d-flex justify-content-around align-items-center flex-column ${styles.services}`}>
+                      <div className= {`d-flex justify-content-around align-items-center ${styles.img_with_border}`}>
                         <img
                           src="../assets/img/ui.svg"
                           alt="ui-icon"
@@ -82,8 +81,8 @@ function Home() {
                       <span>UI & UX</span>
                     </div>
 
-                    <div className="services d-flex justify-content-around align-items-center flex-column">
-                      <div className="img-with-border d-flex justify-content-around align-items-center">
+                    <div className= {`d-flex justify-content-around align-items-center flex-column ${styles.services}`}>
+                      <div className= {`d-flex justify-content-around align-items-center ${styles.img_with_border}`}>
                         <img
                           src="../assets/img/android.svg"
                           alt="android-icon"
@@ -93,8 +92,8 @@ function Home() {
                       <span>Android</span>
                     </div>
 
-                    <div className="services d-flex justify-content-around align-items-center flex-column">
-                      <div className="img-with-border d-flex justify-content-around align-items-center">
+                    <div className= {`d-flex justify-content-around align-items-center flex-column ${styles.services}`}>
+                      <div className= {`d-flex justify-content-around align-items-center ${styles.img_with_border}`}>
                         <img
                           src="../assets/img/ios.svg"
                           alt="ios-icon"
@@ -111,17 +110,19 @@ function Home() {
         </section>
       </Element>
       <Element name="section3">
-        <section className="section about-us-section w-100 container-fluid">
+        <section className={`section w-100 container-fluid ${styles.about_us_section }`}>
           <div className="container">
             <div className="row content-header h-auto pt-5">
               <div className="row h-100">
                 <div className="col-12 h-100 d-flex justify-content-center align-items-end">
                   <div className="row">
-                    <div className="col-12 col-md-6 div-about-team">
-                      <h6 className="title-section position-relative">
+                    <div className={`col-12 col-md-6 ${styles.div_about_team}`} >
+                      <h6
+                        className={`${styles.title_section} position-relative`}
+                      >
                         درباره کدپیچ
                       </h6>
-                      <p className="about-us-section-p">
+                      <p className={styles.about_us_section_p}>
                         ایین یک ممتن نمون استایین یک متن نمون استایین یک متن
                         نمون استایین یک متن نمون استایین یک متن نمون استایین یک
                         متن نمون استایین یک متن نمون استایین یک متن نمون استایین
@@ -150,50 +151,50 @@ function Home() {
         </section>
       </Element>
       <Element name="section4">
-        <section className="section container-fluid bg-team-cv">
-          <section className="container content-header h-60">
+        <section className={`section container-fluid h-100 ${styles.bg_team_cv}`}>
+          <section className="container content-header ">
             <div className="row pt-6">
-              <div className="col-12 swiper">
+              <div className={`col-12 ${styles.swiper}`}>
                 <Swiper
                   effect={"cards"}
                   grabCursor={true}
                   modules={[EffectCards, Navigation]}
                   navigation={true}
-                  className="mySwiper"
+                  className={styles.mySwiper}
                 >
-                  <SwiperSlide>
+                  <SwiperSlide className={styles.swiperSlide}>
                     <img
-                      src="assets/img/project-1.svg"
+                      src="assets/img/project1.svg"
                       alt="project-1"
-                      className="img-fluid"
+                      className={`img-fluid ${styles.img_fluid}`}
                     />
                   </SwiperSlide>
-                  <SwiperSlide>
+                  <SwiperSlide className={styles.swiperSlide}>
                     <img
                       src="assets/img/project1.svg"
                       alt="project1"
-                      className="img-fluid"
+                      className={`img-fluid ${styles.img_fluid}`}
                     />
                   </SwiperSlide>
-                  <SwiperSlide>
+                  <SwiperSlide className={styles.swiperSlide}>
                     <img
                       src="assets/img/project2.svg"
                       alt="project2"
-                      className="img-fluid"
+                      className={`img-fluid ${styles.img_fluid}`}
                     />
                   </SwiperSlide>
-                  <SwiperSlide>
+                  <SwiperSlide className={styles.swiperSlide}>
                     <img
                       src="assets/img/project3.svg"
                       alt="project3"
-                      className="img-fluid"
+                      className={`img-fluid ${styles.img_fluid}`}
                     />
                   </SwiperSlide>
-                  <SwiperSlide>
+                  <SwiperSlide className={styles.swiperSlide}>
                     <img
                       src="assets/img/project4.svg"
                       alt="project3"
-                      className="img-fluid"
+                      className={`img-fluid ${styles.img_fluid}`}
                     />
                   </SwiperSlide>
                 </Swiper>
