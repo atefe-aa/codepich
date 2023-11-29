@@ -15,7 +15,7 @@ function MobileHeader() {
         className={styles.hamburger}
         onClick={() => setIsOpen((open) => !open)}
       >
-        <img src="menu-icon.svg" />
+        <img src="assets/img/menu-icon.svg" />
       </button>
 
       <Link className={styles.logo} to="/">
