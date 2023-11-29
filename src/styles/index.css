@@ -1,25 +1,25 @@
 /* Define Fonts */
 @font-face {
   font-family: "estedad-exb";
-  src: url("assets/fonts/Estedad-ExtraBold.woff2");
+  src: url("/assets/fonts/Estedad-ExtraBold.woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "estedad-b";
-  src: url("assets/fonts/Estedad-Bold.woff2");
+  src: url("/assets/fonts/Estedad-Bold.woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "estedad-m";
-  src: url("assets/fonts/Estedad-Medium.woff2");
+  src: url("/assets/fonts/Estedad-Medium.woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "estedad-r";
-  src: url("assets/fonts/Estedad-Regular.woff2");
+  src: url("/assets/fonts/Estedad-Regular.woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -52,7 +52,7 @@ a:hover {
 }
 
 .bg-main-page {
-  background: url("assets/img/backgound.svg");
+  background: url("/assets/img/backgound.svg");
   background-position: bottom;
   background-size: cover;
   color: #fff;
@@ -104,7 +104,7 @@ a:hover {
 }
 
 .services {
-  background: url("assets/img/img-322.svg");
+  background: url("/assets/img/img-322.svg");
   padding: 3% 4% 6% 4%;
 }
 
@@ -192,7 +192,7 @@ a:hover {
 /* ?ABout Us Section */
 .about-us-section,
 .bg-team-cv {
-  background: url("assets/img/background-about-us.svg");
+  background: url("/assets/img/background-about-us.svg");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -286,7 +286,7 @@ a:hover {
 }
 /* ?Contact-us */
 .bg-contact-us {
-  background: url("assets/img/background-contact-us.svg");
+  background: url("/assets/img/background-contact-us.svg");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -342,7 +342,7 @@ input::-webkit-input-placeholder {
 }
 /* ?Contact-us page */
 .contact-us-page {
-  background: url("assets/img/background-about-us.svg");
+  background: url("/assets/img/background-about-us.svg");
   background-position: center;
   background-size: cover;
   width: 101vw;
@@ -455,7 +455,7 @@ input::-webkit-input-placeholder {
   }
 
   .services {
-    background: url(assets/img/img-322.svg);
+    background: url(/assets/img/img-322.svg);
     padding: 3% 4% 6% 4%;
     margin-top: -280px;
   }
@@ -538,7 +538,7 @@ input::-webkit-input-placeholder {
 /* ?About-us-page */
 .aboutus-section,
 .step-section {
-  background: url("assets/img/bg-341.svg");
+  background: url("/assets/img/bg-341.svg");
   background-size: cover;
   height: 100vh;
   color: #fff;
@@ -547,7 +547,7 @@ input::-webkit-input-placeholder {
 }
 
 .step-section {
-  background: url("assets/img/bg-13.svg");
+  background: url("/assets/img/bg-13.svg");
   height: auto;
 }
 
@@ -560,12 +560,12 @@ input::-webkit-input-placeholder {
 }
 
 .bg-contact-short {
-  background: url("assets/img/bg-321.svg");
+  background: url("/assets/img/bg-321.svg");
   background-size: contain;
 }
 /* ?CodePich-CV */
 .codepich-cv {
-  background: url("assets/img/img-342.svg");
+  background: url("/assets/img/img-342.svg");
   background-size: cover;
   background-position: center bottom;
   height: 100vh !important;
@@ -586,7 +586,7 @@ input::-webkit-input-placeholder {
 }
 
 .cv-section {
-  background: url("assets/img/img-218.svg");
+  background: url("/assets/img/img-218.svg");
   background-size: cover;
   background-position: top;
   margin-top: -1px;
