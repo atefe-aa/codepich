@@ -23,7 +23,7 @@ function Header() {
         <li className={styles.headerLineSmall}>
           <div className={styles.headerLine}></div>
         </li>
-        <li style={{ width: "min-content" }}>
+        <li>
           <Link to="why-us">درباره</Link>
         </li>
         <li className={styles.headerLineSmall}>
@@ -41,7 +41,7 @@ function Header() {
         <li className={styles.headerLineBig}>
           <div className={styles.headerLine}></div>
         </li>
-        <li style={{ width: "min-content" }}>
+        <li>
           <Link to="team-cv">رزومه</Link>
         </li>
         <li className={styles.headerLineBig}>

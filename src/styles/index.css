@@ -1,32 +1,31 @@
 /* Define Fonts */
 @font-face {
   font-family: "estedad-exb";
-  src: url("fonts/Estedad-ExtraBold.woff2");
+  src: url("assets/fonts/Estedad-ExtraBold.woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "estedad-b";
-  src: url("fonts/Estedad-Bold.woff2");
+  src: url("assets/fonts/Estedad-Bold.woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "estedad-m";
-  src: url("fonts/Estedad-Medium.woff2");
+  src: url("assets/fonts/Estedad-Medium.woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "estedad-r";
-  src: url("fonts/Estedad-Regular.woff2");
+  src: url("assets/fonts/Estedad-Regular.woff2");
   font-weight: normal;
   font-style: normal;
 }
 /* start Basic root style */
 
 * {
-  direction: rtl;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -36,7 +35,7 @@
 ul,
 li {
   list-style: none;
-  /* display: inline-block; */
+  display: inline-block;
 }
 
 a {
@@ -83,7 +82,10 @@ a:hover {
   height: 100px;
 }
 
-
+.item-menu {
+  padding: 0 25px;
+  cursor: pointer;
+}
 
 /* img[alt="logo-codepich"] {
   width: 100px;
@@ -101,8 +103,18 @@ a:hover {
   font-family: "estedad-m";
 }
 
+.services {
+  background: url("assets/img/img-322.svg");
+  padding: 3% 4% 6% 4%;
+}
 
-
+.about-us-para {
+  font-size: 14px;
+  border-right: 2px solid #fff;
+  padding-right: 15px;
+  line-height: 24.4px;
+  margin: 0 20px 0 100px;
+}
 
 .img-with-border {
   border: 2px solid #efefef;
@@ -123,6 +135,12 @@ a:hover {
     font-size: 13px;
   }
 
+  .about-us-section-p {
+    width: 90%;
+    margin: 10px auto;
+    font-size: 13px;
+  }
+
   .text-top h1 {
     font-family: "estedad-b";
     font-size: 20px;
@@ -135,7 +153,7 @@ a:hover {
 
 @media all and (max-width: 391px) {
   img[alt="web-design-img"] {
-    margin-top: 31%;
+    margin-top: 31% !important;
   }
 
   .content-section {
@@ -150,6 +168,13 @@ a:hover {
   .header-description {
     font-size: 11px;
   }
+
+  .about-us-section-p {
+    width: 90%;
+    margin: 8px auto;
+    font-size: 11px;
+  }
+
   .content-section {
     margin-top: 20px;
   }
@@ -164,7 +189,8 @@ a:hover {
   }
 }
 
-
+/* ?ABout Us Section */
+.about-us-section,
 .bg-team-cv {
   background: url("assets/img/background-about-us.svg");
   background-position: center;
@@ -176,7 +202,29 @@ a:hover {
   overflow-x: hidden;
 }
 
+.about-us-section-p {
+  font-size: 15px;
+  padding-right: 15px;
+  line-height: 24.4px;
+  margin: 0 20px 0 100px;
+}
 
+.title-section {
+  font-family: "estedad-b";
+  font-size: 20px;
+  margin-right: 60px;
+}
+
+.title-section::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: #fff;
+  top: 50%;
+  right: -25px;
+  border-radius: 10px;
+}
 
 /* ?Slider */
 .swiper {
@@ -380,12 +428,44 @@ input::-webkit-input-placeholder {
   }
 
   img[alt="logo-codepich"] {
-    margin-right: 30px;
+    margin-right: 30px !important;
   }
 
   .contact-page .row {
     padding-right: 26px !important;
     padding-left: 20px !important;
+  }
+
+  .items-div {
+    display: none;
+    padding: 20px 25px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(210, 210, 210, 0.3);
+    position: absolute;
+    top: 45px;
+  }
+
+  .items-div li {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #efefef;
+  }
+
+  .services {
+    background: url(assets/img/img-322.svg);
+    padding: 3% 4% 6% 4%;
+    margin-top: -280px;
+  }
+
+  .about-us-para {
+    font-size: 11px;
+    border-right: 2px solid #fff;
+    padding-right: 15px;
+    line-height: 24.4px;
+    margin: 0 0 20px 0;
   }
 
   .row-div {
@@ -394,20 +474,199 @@ input::-webkit-input-placeholder {
     margin-right: -14vw;
   }
 
+  .about-us-section .container {
+    padding-top: 130px !important;
+  }
+
   .bg-contact-us .col-12 {
-    padding-top: 140px;
+    padding: 14px 0 0 0;
+    padding-right: 0 !important;
+  }
+
+  .div-about-team {
+    margin: 0 0 10px 0 !important;
+  }
+
+  .aboutus-section {
+    background-position: bottom !important;
+  }
+
+  div.bottom-20px {
+    bottom: 90px !important;
+  }
+
+  .img-cv {
+    width: 40% !important;
+  }
+
+  img[alt="img-team"] {
+    width: 100% !important;
+  }
+
+  .cv-container {
+    border: none;
+  }
+
+  .cv-container::after {
+    display: none;
   }
 }
 
+.services-div {
+  position: absolute;
+  bottom: -50px;
+}
 
+.div-about-team {
+  margin: 100px 0 -100px 0;
+}
 
-
-.header {
+/* .header {
   position: fixed;
   z-index: 999;
   color: #fff;
-}
+} */
 
 .fp-overflow {
   overflow-y: visible !important;
+}
+
+.bg-contact-us .col-12 {
+  padding: 70px 110px 0 0;
+}
+
+/* ?About-us-page */
+.aboutus-section,
+.step-section {
+  background: url("assets/img/bg-341.svg");
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  background-position: center;
+  padding-top: 40px;
+}
+
+.step-section {
+  background: url("assets/img/bg-13.svg");
+  height: auto;
+}
+
+.bottom-20px {
+  bottom: 20px;
+}
+
+.p-about-us {
+  border-right: 0px;
+}
+
+.bg-contact-short {
+  background: url("assets/img/bg-321.svg");
+  background-size: contain;
+}
+/* ?CodePich-CV */
+.codepich-cv {
+  background: url("assets/img/img-342.svg");
+  background-size: cover;
+  background-position: center bottom;
+  height: 100vh !important;
+}
+
+.div-cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 150px 0 0;
+}
+
+.img-cv {
+  position: absolute;
+  bottom: 10px;
+  right: 25px;
+}
+
+.cv-section {
+  background: url("assets/img/img-218.svg");
+  background-size: cover;
+  background-position: top;
+  margin-top: -1px;
+}
+
+.btn-more-cv {
+  bottom: 22px;
+  right: 50%;
+  transform: translate(50%, -0);
+}
+
+.cv-container::after {
+  content: "نمایش بیشتر";
+  background: #212529;
+  color: #fff;
+  border-radius: 0.5rem;
+  width: fit-content;
+  padding: 1rem 1.5rem;
+  position: absolute;
+  bottom: -25px;
+  right: 50%;
+  transform: translate(50%, -0);
+  cursor: pointer;
+}
+/* teamMember */
+.title-team-member {
+  font-family: "estedad-exb";
+  font-size: 20px;
+  color: #350c5a;
+  display: flex;
+  justify-content: center;
+}
+
+.glass-bg {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(210, 210, 210, 0.3);
+  color: #fff;
+  border-radius: 12px;
+  padding: 20px 25px;
+  line-height: 30px;
+}
+.mahan::before,
+.atefe::before,
+.amir::before,
+.zahra::before {
+  content: "ماهان";
+  background: rgba(243, 243, 243, 0.4);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(210, 210, 210, 0.4);
+  color: #fff;
+  border-radius: 12px;
+  padding: 8px 22px;
+  position: absolute;
+  top: -27px;
+  cursor: pointer;
+}
+
+.atefe::before {
+  content: "عاطفه";
+}
+.amir::before {
+  content: "امیر";
+}
+.zahra::before {
+  content: "زهرا";
+}
+
+.mahan::after,
+.atefe::after,
+.amir::after,
+.zahra::after {
+  content: "نمایش بیشتر";
+  background: #8815ef;
+  padding: 12px 26px;
+  border-radius: 12px;
+  position: absolute;
+  left: 20px;
+  bottom: -20px;
+  cursor: pointer;
 }
