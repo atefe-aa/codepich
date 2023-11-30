@@ -1,389 +1,369 @@
 .section1 {
-  background: url("/assets/img/whyus-bg2.svg");
-  background-position: center top;
-  background-size: cover;
-  height: 100vh;
-  position: relative;
-  color: #d5d5d5;
-}
-
-.card {
-  position: absolute;
-  top: 30%;
-  right: 25%;
-  padding: 1rem;
-  border: solid #d5d5d5 1.5px;
-  border-radius: 20px;
-  width: 30%;
-}
-.bg2{
-      background: url("/assets/img/bg-section4.svg");
-  background-position: center -130px;
-  background-size: cover  100%;
-}
-.section2 {
-  padding-top: 20px;
-
-  color: #d5d5d5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.whyUsBox {
-    margin-top: 50px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.line {
-  width: 20%;
-  height: 1px;
-  background-color: #d5d5d5;
-}
-.lineTop {
-  margin-bottom: 20px;
-}
-.lineBottom {
-  margin-top: 20px;
-}
-.whyUsP {
-  border-left: #d5d5d5 solid 1px;
-  border-right: #d5d5d5 solid 1px;
-  width: 60%;
-  padding: 1rem;
-}
-
-.whysBox {
-  margin-top: 90px;
-  width: 70%;
-  display: grid;
-  grid-template-areas:
-    "whys1 empty1 "
-    "whys1 whys2 "
-    "whys3 whys2"
-    "whys3 whys4"
-    "whys3 whys4";
-}
-
-.whys {
-  padding: 15px;
-  height: 25rem;
-  font-size: 1.2rem;
-}
-.whys1 {
-  border-left: solid 1px #d5d5d5;
-  grid-area: whys1;
-}
-.whys2 {
-  grid-area: whys2;
-}
-.whys3 {
-  border-left: solid 1px #d5d5d5;
-  grid-area: whys3;
-  height: 100%;
-}
-.whys4 {
-  grid-area: whys4;
-}
-.h5 {
-  font-weight: bold;
-}
-
-.section3 {
-  height: 50vh;
-  /* background: url("/assets/img/whyus-bg2.svg");
-  background-position: center top;
-  background-size: cover; */
-  color: #d5d5d5;
-  display: flex;
-  justify-content: center;
-}
-.cardSection3 {
-  background-color: rgba(61, 79, 95, 0.39);
-  font-size: larger;
-  margin-top: 7.5rem;
-  height: max-content;
-  text-align: center;
-  padding: 1.7rem;
-  border: solid #d5d5d5 1.5px;
-  border-radius: 20px;
-  width: 30%;
-}
-.section4 {
-  height: 2700px;
-  /* background: url("/assets/img/bg-section4.svg") center -2000px;
-  background-size: cover 100%; */
-  color: #d5d5d5;
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
-}
-.teamPart {
-  position: relative;
-}
-
-.teamImage {
-  width: 70%;
-  /* position: absolute; */
-}
-
-.personContainer {
-  margin-top: 180px;
-  border-radius: 15px;
-  width: 80%;
-  height: 300px;
-  position: relative;
-  margin-right: 10%;
-}
-
-.personPic {
-  position: absolute;
-  bottom: 0;
-}
-.personPic img {
-  height: 400px;
-}
-
-.personName {
-  position: absolute;
-  top: -30px;
-  border-radius: 15px;
-  width: 150px;
-  height: 50px;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-}
-
-.aboutPerson {
-  position: absolute;
-  top: 50px;
-  line-height: 30px;
-}
-
-.personLeft {
-  .personName {
-    left: 250px;
+    background: url("/assets/img/whyus-bg2.svg");
+    background-position: center top;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    color: #d5d5d5;
   }
-  .aboutPerson {
-    right: 50px;
-    margin-left: 280px;
+  
+  .card {
+    position: absolute;
+    top: 30%;
+    right: 25%;
+    padding: 1rem;
+    border: solid #d5d5d5 1.5px;
+    border-radius: 20px;
+    width: 30%;
   }
-  .personPic {
-    left: 0;
+  .bg2 {
+    background: url("/assets/img/bg-section4.svg");
+    background-position: center -130px;
+    background-size: cover 100%;
   }
-}
-
-.personRight {
-  .personName {
-    right: 250px;
-  }
-  .aboutPerson {
-    right: 280px;
-    margin-left: 50px;
-  }
-}
-
-.mahan {
-  background: #347e6a;
-  .personName {
-    background: #1f4d40;
-  }
-}
-
-.atefe {
-  margin-top: 0;
-  background: #34367e;
-  .personName {
-    background: #26285a;
-  }
-}
-
-.zahra {
-  background: #286aa8;
-  .personName {
-    background: #1d4c79;
-  }
-}
-.amir {
-  background: #3c9cca;
-  .personName {
-    background: #2c6e8d;
-  }
-}
-
-.contactBtn {
-  margin-top: 50px;
-  background: none;
-  border: 1px solid #d5d5d5;
-  border-radius: 8px;
-  width: 12rem;
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-/* Media query */
-
-@media only screen and (max-width: 1199px) {
-  .section4 {
-    height: 3300px;
-    background-position: center -200px;
+  .section2 {
+    color: #d5d5d5;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
-
-  .teamImage {
-    width: 100%;
-  }
-
-  .personContainer {
+  .whyUsBox {
     margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .line {
+    width: 20%;
+    height: 1px;
+    background-color: #d5d5d5;
+  }
+  .lineTop {
+    margin-bottom: 20px;
+  }
+  .lineBottom {
+    margin-top: 20px;
+  }
+  .whyUsP {
+    border-left: #d5d5d5 solid 1px;
+    border-right: #d5d5d5 solid 1px;
+    width: 60%;
+    padding: 1rem;
+  }
+  
+  .whysBox {
+    margin-top: 90px;
+    width: 70%;
+    display: grid;
+    grid-template-areas:
+      "whys1 empty1 "
+      "whys1 whys2 "
+      "whys3 whys2"
+      "whys3 whys4"
+      "whys3 whys4";
+  }
+  
+  .whys {
+    padding: 15px;
+    height: 25rem;
+    font-size: 1.2rem;
+  }
+  .whys1 {
+    border-left: solid 1px #d5d5d5;
+    grid-area: whys1;
+  }
+  .whys2 {
+    grid-area: whys2;
+  }
+  .whys3 {
+    border-left: solid 1px #d5d5d5;
+    grid-area: whys3;
+    height: 100%;
+  }
+  .whys4 {
+    grid-area: whys4;
+  }
+  .h5 {
+    font-weight: bold;
+  }
+  
+  .section3 {
+    height: 50vh;
+    color: #d5d5d5;
+    display: flex;
+    justify-content: center;
+  }
+  .cardSection3 {
+    background-color: rgba(61, 79, 95, 0.39);
+    font-size: larger;
+    margin-top: 7.5rem;
+    height: max-content;
+    text-align: center;
+    padding: 1.7rem;
+    border: solid #d5d5d5 1.5px;
+    border-radius: 20px;
+    width: 30%;
+  }
+  .section4 {
+    height: 2700px;
+    color: #d5d5d5;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+  }
+  .teamPart {
     position: relative;
   }
-
+  
+  .teamImage {
+    width: 70%;
+  }
+  
+  .personContainer {
+    margin-top: 180px;
+    border-radius: 15px;
+    width: 80%;
+    height: 300px;
+    position: relative;
+    margin-right: 10%;
+  }
+  
   .personPic {
     position: absolute;
     bottom: 0;
   }
   .personPic img {
-    height: 200px;
+    height: 400px;
   }
-
+  
   .personName {
     position: absolute;
-    top: -20px;
-    width: 80px;
-    height: 40px;
+    top: -10%;
+    border-radius: 15px;
+    width: 15%;
+    height: 18%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
   }
-
+  
   .aboutPerson {
-    top: 20px;
-    line-height: normal;
+    position: absolute;
+    top: 10%;
+    line-height: 30px;
   }
-
+  
   .personLeft {
+    .personName {
+      left: 25%;
+    }
     .aboutPerson {
-      right: 20px;
-      margin-left: 120px;
+      right: 5%;
+      margin-left: 28%;
+    }
+    .personPic {
+      left: 0;
     }
   }
-
+  
   .personRight {
+    .personName {
+      right: 25%;
+    }
     .aboutPerson {
-      right: 130px;
-      margin-left: 15px;
+      right: 25%;
+      margin-left: 5%;
     }
   }
-}
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  .personContainer {
-    height: 300px;
+  
+  .mahan {
+    background: #347e6a;
+    .personName {
+      background: #1f4d40;
+    }
   }
-}
-@media only screen and (max-width: 768px) {
-  .section1 {
+  
+  .atefe {
+    margin-top: 0;
+    background: #34367e;
+    .personName {
+      background: #26285a;
+    }
+  }
+  
+  .zahra {
+    background: #286aa8;
+    .personName {
+      background: #1d4c79;
+    }
+  }
+  .amir {
+    background: #3c9cca;
+    .personName {
+      background: #2c6e8d;
+    }
+  }
+  
+  .contactDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+  }
+  .contactBtn {
+    margin-top: 50px;
+    background: none;
+    border: 1px solid #d5d5d5;
+    border-radius: 8px;
+    width: 12rem;
+    height: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .card {
-    position: unset;
-    width: 60%;
-  }
-  .lineTop {
-    display: none;
-  }
-  .whyUsP {
-    border: none;
-    width: 100%;
-    text-align: center;
-  }
-
-  .whysBox {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .whys {
-    border: solid 1px #d5d5d5;
-    background-color: #1d4d798f;
-    border-radius: 8px;
-    height: auto;
-    margin-bottom: 7px;
-    font-size: medium;
-  }
-  .whys4 {
-    margin-bottom: 100px;
-  }
-
-  .cardSection3 {
-    font-size: larger;
-    padding: 1.7rem;
-    width: 90%;
-  }
-
-  .section4 {
-    height: 3300px;
-    background-position: center -200px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .teamImage {
-    width: 100%;
-  }
-
-  .personContainer {
-    margin-top: 50px;
-    height: 600px;
-    position: relative;
-  }
-
-  .personPic {
-    position: absolute;
-    bottom: 0;
-  }
-  .personPic img {
-    height: 200px;
-  }
-
-  .personName {
-    position: absolute;
-    top: -20px;
-    width: 80px;
-    height: 40px;
-  }
-
-  .aboutPerson {
-    top: 20px;
-    line-height: normal;
-  }
-
-  .personLeft {
+  
+  /* Media query */
+  @media only screen and (max-width: 1199px) {
+    .bg2{
+        height: 4680px;
+    }
+    .teamImage {
+      width: 100%;
+    }
+  
+    .personContainer {
+      margin-top: 50px;
+      position: relative;
+    }
+  
+    .personPic {
+      position: absolute;
+      bottom: 0;
+    }
+    .personPic img {
+      height: 200px;
+    }
+  
+    .personName {
+      position: absolute;
+      top: -20px;
+      width: 80px;
+      height: 40px;
+    }
+  
     .aboutPerson {
-      right: 20px;
-      margin-left: 120px;
+      top: 20px;
+      line-height: normal;
+    }
+  
+    .personLeft {
+      .aboutPerson {
+        right: 20px;
+        margin-left: 120px;
+      }
+    }
+  
+    .personRight {
+      .aboutPerson {
+        right: 130px;
+        margin-left: 15px;
+      }
     }
   }
-
-  .personRight {
-    .aboutPerson {
-      right: 130px;
-      margin-left: 15px;
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .personContainer {
+      height: 300px;
     }
   }
-
-  h3 {
-    padding: 0 10px;
-    font-size: large;
+  @media only screen and (max-width: 768px) {
+    .card {
+      top: 18%;
+      right: 10%;
+      width: 80%;
+    }
+    .line {
+      display: none;
+    }
+    .whyUsP {
+      margin: 0;
+      border: none;
+      width: 95%;
+      text-align: center;
+    }
+  
+    .whysBox {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .whys {
+      border: solid 1px #d5d5d5;
+      background-color: #1d4d798f;
+      border-radius: 8px;
+      height: auto;
+      margin-bottom: 7px;
+      font-size: medium;
+    }
+    .whys4 {
+      margin-bottom: 70px;
+    }
+  
+    .cardSection3 {
+      font-size: larger;
+      padding: 1.7rem;
+      width: 90%;
+    }
+  
+    .personContainer {
+      margin-top: 20px;
+      height: 550px;
+    }
+     .atefe {
+      height: 600px;
+    }
+  
+    .personName {
+      position: absolute;
+      top: -15px;
+      width: 80px;
+      height: 40px;
+    }
+  
+    .personLeft {
+      .personName{
+          right:10px;
+      }
+      .aboutPerson {
+        right: 20px;
+        margin-left: 20px;
+      }
+    }
+  
+    .personRight {
+      .personName{
+          right:10px;
+      }
+      .aboutPerson {
+        right: 20px;
+        margin-left: 15px;
+      }
+    }
+  
+    .contactDiv {
+      margin-top: 50px;
+    }
+    h3 {
+      padding: 0 10px;
+      font-size: large;
+    }
+    .contactBtn {
+      margin-top: 30px;
+      width: 10rem;
+      height: 3rem;
+    }
   }
-  .contactBtn {
-    margin-top: 30px;
-    width: 10rem;
-    height: 3rem;
-  }
-}
+  

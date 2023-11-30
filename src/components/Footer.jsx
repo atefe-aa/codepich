@@ -8,23 +8,26 @@ function Footer() {
           <Form />
         </div>
       </div>
-      <div className="m-5">
+      <div className="m-5 d-flex flex-column">
         <span className="form-title">راه های ارتباط با ما : </span>
-        <a className="mb-md-1 me-1" href="http://t.me/tobeconfi">
-          <img className="img-fluid" src="/assets/img/telegram-logo.svg" />
+        <div>
+            <a className=" ms-1" href="http://t.me/tobeconfi">
+          <img className="img-fluid" style={{width:'3rem'}} src="/assets/img/telegram-logo.svg" />
         </a>
-        <a className="mb-md-1 me-1" href="http://t.me/tobeconfi">
-          <img className="img-fluid" src="/assets/img/instagram-logo.svg" />
+        <a className=" ms-1" href="http://t.me/tobeconfi">
+          <img className="img-fluid" style={{width:'3rem'}} src="/assets/img/instagram-logo.svg" />
         </a>
-        <a className="mb-md-1 me-1" href="http://t.me/tobeconfi">
-          <img className="img-fluid" src="/assets/img/x-logo.svg" />
+        <a className=" ms-1" href="http://t.me/tobeconfi">
+          <img className="img-fluid" style={{width:'3rem'}} src="/assets/img/x-logo.svg" />
         </a>
-        <a className="mb-md-1 me-1" href="http://t.me/tobeconfi">
-          <img className="img-fluid" src="/assets/img/linkedin-logo.svg" />
+        <a className=" ms-1" href="http://t.me/tobeconfi">
+          <img className="img-fluid" style={{width:'3rem'}} src="/assets/img/linkedin-logo.svg" />
         </a>
-        <a className="mb-md-1 me-1" href="http://t.me/tobeconfi">
-          <img className="img-fluid" src="/assets/img/facebook-logo.svg" />
+        <a className=" ms-1" href="http://t.me/tobeconfi">
+          <img className="img-fluid" style={{width:'3rem'}} src="/assets/img/facebook-logo.svg" />
         </a>
+        </div>
+      
       </div>
     </footer>
   );

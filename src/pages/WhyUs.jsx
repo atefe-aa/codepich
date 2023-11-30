@@ -5,7 +5,7 @@ import { scrollToTop } from "../utils/helpers";
 function WhyUs() {
   return (
     <>
-      <section className={`container-fluid ${styles.section1}`}>
+      <section className={styles.section1}>
         <div className={styles.card}>
           <h5>راه اندازی یک ابتکار نرم افزار جدید سخت است. این نباید باشد.</h5>
           <p>
@@ -181,9 +181,7 @@ function WhyUs() {
           </div>
         </div>
         <div
-          className="d-flex flex-column justify-content-center align-items-center"
-          style={{ marginTop: "150px" }}
-        >
+          className={styles.contactDiv}>
           <h3>ما دوست داریم درمورد محصول یا ایده شما بشنویم</h3>
           <Link
             to="/contact"
