@@ -14,7 +14,8 @@ function WhyUs() {
           </p>
         </div>
       </section>
-      <section className={styles.section2}>
+      <section  className={styles.bg2}>
+        <section className={styles.section2}>
         <div className={styles.whyUsBox}>
           <div className={`${styles.line} ${styles.lineTop}`}></div>
           <h4>چرا ما؟</h4>
@@ -193,6 +194,8 @@ function WhyUs() {
           </Link>
         </div>
       </section>
+      </section>
+      
     </>
   );
 }
