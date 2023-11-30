@@ -1,13 +1,10 @@
 import { NavLink, Link } from "react-router-dom";
 import styles from "./Header.module.css";
 import MobileHeader from "./MobileHeader";
+import { scrollToTop } from "../utils/helpers";
+
 
 function Header() {
-  const scrollToTop = () =>
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
 
   return (
     <header className={styles.header}>

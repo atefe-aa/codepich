@@ -1,6 +1,7 @@
 import styles from "./HamburgerMenu.module.css";
 import { useOutsideClick } from "../hooks/useOutsideClick";
 import { Link } from "react-router-dom";
+import { scrollToTop } from "../utils/helpers";
 
 function HamburgerMenu({ handleClose }) {
   const ref = useOutsideClick(handleClose, true);
@@ -10,13 +11,19 @@ function HamburgerMenu({ handleClose }) {
         <img src="assets/img/closeButton.svg" />
       </button>
       <li className={styles.itemMenu}>
-        <Link to="services">خدمات</Link>
+        <Link to="services" onClick={scrollToTop}>
+          خدمات
+        </Link>
       </li>
       <li className={styles.itemMenu}>
-        <Link to="process">فرآیند</Link>
+        <Link to="process" onClick={scrollToTop}>
+          فرآیند
+        </Link>
       </li>
       <li className={styles.itemMenu}>
-        <Link to="/why-us">چرا ما؟</Link>
+        <Link to="/why-us" onClick={scrollToTop}>
+          چرا ما؟
+        </Link>
       </li>
     </div>
   );
