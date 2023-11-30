@@ -16,8 +16,8 @@
   border-radius: 20px;
   width: 30%;
 }
+
 .section2 {
-  /* width: 100%; */
   padding-top: 20px;
   background: url("/assets/img/bg-main.svg");
   background-position: center top;
@@ -51,6 +51,7 @@
   width: 60%;
   padding: 1rem;
 }
+
 .whysBox {
   margin-top: 90px;
   width: 70%;
@@ -97,9 +98,8 @@
   justify-content: center;
 }
 .cardSection3 {
-    background-color: rgba(61, 79, 95, 0.39);
-    
-    font-size: larger;
+  background-color: rgba(61, 79, 95, 0.39);
+  font-size: larger;
   margin-top: 7.5rem;
   height: max-content;
   text-align: center;
@@ -123,8 +123,7 @@
 
 .teamImage {
   width: 70%;
-/* position: absolute; */
-
+  /* position: absolute; */
 }
 
 .personContainer {
@@ -224,20 +223,108 @@
   justify-content: center;
 }
 /* Media query */
-@media all and (max-width: 580px) {
-}
-
-@media all and (max-width: 391px) {
-}
 
 @media all and (max-width: 768px) {
+  .section1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .card {
     position: unset;
     width: 60%;
   }
+  .lineTop {
+    display: none;
+  }
+  .whyUsP {
+    border: none;
+    width: 100%;
+    text-align: center;
+  }
 
-  .section1 {
-    align-items: center;
-    justify-content: center;
+  .whysBox {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .whys {
+    border: solid 1px #d5d5d5;
+    background-color: #1d4d798f;
+    border-radius: 8px;
+    height: auto;
+    margin-bottom: 7px;
+    font-size: medium;
+  }
+  .whys4 {
+    margin-bottom: 100px;
+  }
+
+  .cardSection3 {
+    font-size: larger;
+    padding: 1.7rem;
+    width: 90%;
+  }
+
+  .section4 {
+    height: 3300px;
+    background-position: center -200px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .teamImage {
+    width: 100%;
+  }
+
+  .personContainer {
+    margin-top: 50px;
+    height: 600px;
+    position: relative;
+  }
+
+  .personPic {
+    position: absolute;
+    bottom: 0;
+  }
+  .personPic img {
+    height: 200px;
+  }
+
+  .personName {
+    position: absolute;
+    top: -20px;
+    width: 80px;
+    height: 40px;
+  }
+
+  .aboutPerson {
+    top: 20px;
+    line-height: normal;
+  }
+
+  .personLeft {
+    .aboutPerson {
+      right: 20px;
+      margin-left: 120px;
+    }
+  }
+
+  .personRight {
+    .aboutPerson {
+      right: 130px;
+      margin-left: 15px;
+    }
+  }
+  
+  h3{
+    padding: 0 10px;
+    font-size: large;
+  }
+  .contactBtn {
+    margin-top: 30px;
+    width: 10rem;
+    height: 3rem;
   }
 }
