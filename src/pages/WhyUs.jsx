@@ -29,7 +29,7 @@ function WhyUs() {
         <div className={styles.whysBox}>
           <div className={`${styles.whys} ${styles.whys1}`}>
             <div className="d-flex align-items-center justify-content-end">
-              <h5 className={styles.h5}>سفرآغازمیشود</h5>
+              <h5 className={`w-50 ${styles.h5}`}>سفر آغاز می شود</h5>
               <div className={`w-100 ${styles.line}`}></div>
             </div>
 
@@ -43,8 +43,8 @@ function WhyUs() {
           </div>
           <div className={`${styles.whys} ${styles.whys2}`}>
             <div className="d-flex align-items-center justify-content-end">
-              <div className={`w-100 ${styles.line}`}></div>
-              <h5 className={styles.h5}>ساختاپلیکیشنسختاست</h5>
+              <div className={`w-75 ${styles.line}`}></div>
+              <h5 className={`w-100 ${styles.h5}`}>ساخت اپلیکیشن سخت است</h5>
             </div>
             <p>
               سه سال، بیش از 2000 ایده و 16 برنامه راه‌اندازی شده بعد، ما به طور
@@ -57,7 +57,7 @@ function WhyUs() {
           </div>
           <div className={`${styles.whys} ${styles.whys3}`}>
             <div className="d-flex align-items-center justify-content-end">
-              <h5 className={styles.h5}>متولدمیشود</h5>
+              <h5 className={`w-50 ${styles.h5}`}>متولد می شود</h5>
               <div className={`w-100 ${styles.line}`}></div>
             </div>
             <p>
@@ -72,8 +72,8 @@ function WhyUs() {
           </div>
           <div className={`${styles.whys} ${styles.whys4}`}>
             <div className="d-flex align-items-center justify-content-end">
-              <div className={`w-100 ${styles.line}`}></div>
-              <h5 className={styles.h5}>دردسترسقراردادننرمافزار</h5>
+              <div className={`w-75 ${styles.line}`}></div>
+              <h5 className={`w-100 ${styles.h5}`}>در دسترس قرار دادن نرم افزار</h5>
             </div>
             <p>
               ما یک تیم با استعداد داریم که خود را وقف موفقیت پروژه شما می کنند
