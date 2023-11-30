@@ -24,6 +24,10 @@
     font-weight:bolder;
   }
 
+  .navLink:active{
+    border-bottom: #D5D5D5 solid 2px;
+  }
+
   .logo{
     margin: 0 auto;
   }

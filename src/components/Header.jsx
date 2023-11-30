@@ -1,8 +1,14 @@
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import styles from "./Header.module.css";
 import MobileHeader from "./MobileHeader";
 
 function Header() {
+  const scrollToTop = () =>
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+
   return (
     <header className={styles.header}>
       <MobileHeader />
@@ -11,38 +17,63 @@ function Header() {
           <div className={styles.headerLine}></div>
         </li>
         <li>
-          <Link to="services">خدمات</Link>
+          <NavLink
+            to="/services"
+            className={styles.navLink}
+            onClick={scrollToTop}
+          >
+            خدمات
+          </NavLink>
         </li>
         <li className={styles.headerLineSmall}>
           <div className={styles.headerLine}></div>
         </li>
 
         <li>
-          <Link to="process">فرآیند</Link>
+          <NavLink
+            to="/process"
+            className={styles.navLink}
+            onClick={scrollToTop}
+          >
+            فرآیند
+          </NavLink>
         </li>
         <li className={styles.headerLineSmall}>
           <div className={styles.headerLine}></div>
         </li>
         <li>
-          <Link to="why-us">درباره</Link>
+          <NavLink
+            to="/why-us"
+            
+            className={styles.navLink}
+            onClick={scrollToTop}
+          >
+            درباره
+          </NavLink>
         </li>
         <li className={styles.headerLineSmall}>
           <div className={styles.headerLine}></div>
         </li>
         <li className="logo">
-          <Link to="/">
+          <NavLink to="/" onClick={scrollToTop}>
             <img
               src="assets/img/logo-white.svg"
               className={styles.logoImg}
               alt="logo-codepich"
             />
-          </Link>
+          </NavLink>
         </li>
         <li className={styles.headerLineBig}>
           <div className={styles.headerLine}></div>
         </li>
         <li>
-          <Link to="team-cv">رزومه</Link>
+          <Link
+            to="/team-cv"
+            className={styles.navLink}
+            onClick={scrollToTop}
+          >
+            رزومه
+          </Link>
         </li>
         <li className={styles.headerLineBig}>
           <div className={styles.headerLine}></div>
