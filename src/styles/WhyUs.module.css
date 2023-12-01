@@ -206,30 +206,11 @@
     }
   }
   
-  .contactDiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 150px;
-  }
-  .contactBtn {
-    margin-top: 50px;
-    background: none;
-    border: 1px solid #d5d5d5;
-    border-radius: 8px;
-    width: 12rem;
-    height: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+ 
   
   /* Media query */
   @media only screen and (max-width: 1199px) {
-    .bg2{
-        height: 4980px;
-    }
+  
     .teamImage {
       width: 100%;
     }
@@ -272,12 +253,18 @@
       }
     }
   }
-  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
     .personContainer {
       height: 300px;
     }
+    .bg2{
+      height: 3980px;
+  }
   }
   @media only screen and (max-width: 768px) {
+    .bg2{
+      height: 4880px;
+  }
     .card {
       top: 18%;
       right: 10%;
@@ -358,17 +345,6 @@
       }
     }
   
-    .contactDiv {
-      margin-top: 50px;
-    }
-    h3 {
-      padding: 0 10px;
-      font-size: large;
-    }
-    .contactBtn {
-      margin-top: 30px;
-      width: 10rem;
-      height: 3rem;
-    }
+   
   }
   

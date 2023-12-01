@@ -1,0 +1,34 @@
+.contactDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.contactBtn {
+  margin-top: 50px;
+  background: none;
+  border: 1px solid #d5d5d5;
+  border-radius: 8px;
+  width: 12rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .contactDiv {
+    margin-top: 50px;
+  }
+  h3 {
+    padding: 0 10px;
+    font-size: large;
+  }
+  .contactBtn {
+    margin-top: 30px;
+    width: 10rem;
+    height: 3rem;
+  }
+}
