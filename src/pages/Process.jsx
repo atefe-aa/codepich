@@ -18,7 +18,7 @@ function Process() {
           </p>
         </div>
 
-        <div className={styles.magniPic}>
+        <div className={`${styles.pic} ${styles.magniPic}`}>
           <img className="img-fluid" src="/assets/img/magnifire.svg" alt="magnifire on an app icon" />
         </div>
       </div>
@@ -33,7 +33,7 @@ function Process() {
             طراحان و توسعه دهندگان شما را در یک صفحه نگه می دارد
           </p>
         </div>
-        <div className={styles.whiteboardMan}>
+        <div className={`${styles.pic} ${styles.whiteboardMan}`}>
           <img className="img-fluid"
             src="/assets/img/whiteboardMan.svg"
             alt="a guy writing on a whiteboard"
@@ -62,7 +62,7 @@ function Process() {
             با این خرید، می توانید با اطمینان کامل وارد توسعه شوید
           </p>
         </div>
-        <div className={styles.uiDesigner}>
+        <div className={`${styles.pic} ${styles.uiDesigner}`}>
           <img className="img-fluid"
             src="/assets/img/ui-designer.svg"
             alt="a guy working with computer designing UI"
@@ -93,7 +93,7 @@ function Process() {
             بودجه است
           </p>
         </div>
-        <div className={styles.computerPic}>
+        <div className={`${styles.pic} ${styles.computerPic}`}>
           <img className="img-fluid"
             src="/assets/img/computer.svg"
             alt="a gir smaller than a computer, codding"
@@ -126,7 +126,7 @@ function Process() {
             محصول شما هر روز ارزش بیشتری پیدا می‌کند
           </p>
         </div>
-        <div className={styles.maintainPic}>
+        <div className={`${styles.pic} ${styles.maintainPic}`}>
           <img className="img-fluid"
             src="/assets/img/maintain.svg"
             alt="a gir on ladder try to stick an element to a screen"

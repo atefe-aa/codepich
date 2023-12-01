@@ -129,7 +129,7 @@ hr {
 }
 .computerPic {
   position: absolute;
-  top: -5%;
+  top: -11%;
   left: 5%;
 }
 .computerPic img {
@@ -180,4 +180,126 @@ hr {
 }
 .maintainPic img {
   height: 90vh;
+}
+
+@media only screen and (max-width: 1119px) {
+  .pic img {
+    height: 50vh;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1119px) {
+}
+@media only screen and (max-width: 768px) {
+  .section1 {
+    padding-top: 15vh;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .openingDiv {
+    text-align: center;
+    width: 70%;
+    padding-right: 0;
+  }
+
+  .box {
+    padding: 5%;
+  }
+
+  .verticalBar {
+    width: 8px;
+  }
+
+  .stepOne {
+    flex-direction: column;
+    margin-bottom: 20vh;
+    .box {
+      width: 90%;
+      margin-right: 5%;
+    }
+  }
+  .whiteboardMan {
+    margin-right: 20%;
+  }
+  .whiteboardMan img {
+    height: 300px;
+  }
+
+  .stepTitle {
+    padding: 2%;
+  }
+
+  .stepTwo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    .stepTitle {
+      right: -4%;
+    }
+
+    .box {
+      width: 90%;
+      margin-right: 8%;
+    }
+    .box:nth-child(3) {
+      margin-right: 0.5%;
+    }
+
+    .verticalBar {
+      height: 10vh;
+      margin-right: 30%;
+    }
+  }
+  .uiDesigner {
+    position: relative;
+    margin-right: 9%;
+  }
+
+  .stepThree {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+
+    .stepTitle {
+      top: -8%;
+    }
+    .box {
+      width: 80%;
+    }
+    .verticalBar {
+      height: 10vh;
+    }
+  }
+  .computerPic {
+    position: relative;
+    margin-right: 8%;
+  }
+
+  .cycle {
+    margin-bottom: 0;
+  }
+
+  .stepFour {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0vh;
+    .stepTitle {
+      top: -10%;
+    }
+    .box {
+      width: 85%;
+    }
+    .box:nth-child(3) {
+      margin-left: 5%;
+    }
+
+    .verticalBar {
+      height: 5vh;
+    }
+  }
+  .maintainPic {
+    position: relative;
+  }
+  .maintainPic img {
+    height: 40vh;
+  }
 }
