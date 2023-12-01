@@ -1,0 +1,183 @@
+.mainSection {
+  background: url("/assets/img/process-bg.jpg");
+  background-position: center top;
+  background-size: cover;
+  color: #d5d5d5;
+}
+.section1 {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6vh;
+}
+.openingDiv {
+  width: 50%;
+  padding-right: 3rem;
+}
+.openingDiv p {
+  font-size: 0.9rem;
+}
+hr {
+  border-top: #d5d5d5 2px solid;
+}
+.magniPic {
+  width: 37%;
+}
+.magniPic img {
+  width: 25rem;
+}
+
+.box {
+  border-radius: 25px;
+  width: fit-content;
+  height: fit-content;
+  padding: 2.5%;
+  box-shadow: 0px 0px 20px 10px rgba(5, 5, 5, 0.336);
+  position: relative;
+}
+.verticalBar {
+  width: 13px;
+}
+
+.stepOne {
+  display: flex;
+  height: 75vh;
+  .box {
+    background-color: #4e106d;
+    width: 50%;
+    margin-top: 3rem;
+    margin-right: 10%;
+  }
+}
+.whiteboardMan {
+  margin-right: 10%;
+}
+.whiteboardMan img {
+  height: 500px;
+}
+.stepTitle {
+  border-radius: 15px;
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  padding: 2%;
+  box-shadow: 0px 0px 20px 10px rgba(5, 5, 5, 0.336);
+}
+
+.stepTwo {
+  position: relative;
+  margin-bottom: 30vh;
+  .stepTitle {
+    background-color: #341b41;
+    top: -20%;
+    right: -10%;
+  }
+
+  .box {
+    background-color: #4e106d;
+    width: 50%;
+    margin-top: 3rem;
+    margin-right: 8%;
+  }
+  .box:nth-child(3) {
+    margin-top: 0;
+    margin-right: 2%;
+  }
+
+  .verticalBar {
+    background-color: #4e106d;
+    height: 30vh;
+    margin-right: 30%;
+  }
+}
+.uiDesigner {
+  position: absolute;
+  top: 0;
+  left: 10%;
+}
+.uiDesigner img {
+  height: 80vh;
+}
+
+.stepThree {
+  position: relative;
+  margin-bottom: 30vh;
+  .stepTitle {
+    background-color: #321851;
+    top: -20%;
+    right: 5%;
+  }
+
+  .box {
+    background-color: #47296b;
+    width: 60%;
+    margin-top: 3rem;
+    margin-right: 2%;
+  }
+  .box:nth-child(3) {
+    background-color: #404d88;
+    margin-top: 0;
+    margin-right: 10%;
+  }
+
+  .verticalBar {
+    background: linear-gradient(to bottom, #47296b 60%, #404d88);
+    height: 20vh;
+    margin-right: 30%;
+  }
+}
+.computerPic {
+  position: absolute;
+  top: -5%;
+  left: 5%;
+}
+.computerPic img {
+  height: 80vh;
+}
+
+.cycle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20vh;
+}
+.cycle img {
+  height: 60vh;
+}
+
+.stepFour {
+  position: relative;
+  margin-bottom: 40vh;
+  .stepTitle {
+    background-color: #17515f;
+    top: -20%;
+    right: 5%;
+  }
+
+  .box {
+    background-color: #2b6a79;
+    width: 60%;
+    margin-top: 3rem;
+    margin-right: 8%;
+  }
+  .box:nth-child(3) {
+    background-color: #3a5483;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: 8%;
+  }
+
+  .verticalBar {
+    background: linear-gradient(to bottom, #2b6a79 60%, #3a5483);
+    height: 15vh;
+    margin-right: 50%;
+  }
+}
+.maintainPic {
+  position: absolute;
+  top: 35%;
+  right: 8%;
+}
+.maintainPic img {
+  height: 90vh;
+}

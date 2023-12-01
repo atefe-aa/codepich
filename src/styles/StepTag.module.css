@@ -1,0 +1,19 @@
+.stepTag{
+display: flex;
+align-items: center;
+}
+.rightLine{
+background-color: aliceblue;
+width: 10%;
+height: 2px;
+}
+.circle{
+height: 20px;
+width: 20px;
+border: 2px solid #d5d5d5;
+border-radius: 100%;
+}
+.stepTitle{
+margin-right: 9px;
+font-weight: bolder;
+}
