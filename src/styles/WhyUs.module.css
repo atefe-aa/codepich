@@ -17,7 +17,7 @@
     width: 30%;
   }
   .bg2 {
-    background: url("/assets/img/bg-section4.svg");
+    background: url("/assets/img/bg2-whyus.jpg");
     background-position: center -130px;
     background-size: cover 100%;
   }
@@ -228,7 +228,7 @@
   /* Media query */
   @media only screen and (max-width: 1199px) {
     .bg2{
-        height: 4680px;
+        height: 4980px;
     }
     .teamImage {
       width: 100%;
@@ -236,7 +236,6 @@
   
     .personContainer {
       margin-top: 50px;
-      position: relative;
     }
   
     .personPic {
@@ -283,9 +282,13 @@
       top: 18%;
       right: 10%;
       width: 80%;
+      text-align: center;
     }
     .line {
       display: none;
+    }
+    h5{
+      font-size: medium;
     }
     .whyUsP {
       margin: 0;
@@ -320,10 +323,12 @@
   
     .personContainer {
       margin-top: 20px;
-      height: 550px;
+      height: 600px;
+      width: 90%;
+    margin-right: 5%;
     }
      .atefe {
-      height: 600px;
+      height: 700px;
     }
   
     .personName {
