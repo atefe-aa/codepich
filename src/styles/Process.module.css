@@ -183,21 +183,25 @@ hr {
 }
 @media only screen and (max-width: 1119px) {
   .pic img {
-    height: 50vh;
+    width: 50vh;
   }
 }
 @media only screen and (max-width: 768px) {
   .section1 {
     padding-top: 15vh;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: space-around; */
+ 
+    height: 100vh;
   }
   .openingDiv {
     text-align: center;
     width: 70%;
     padding-right: 0;
   }
-
+   .magniPic{
+    margin-bottom: 20px;
+   }
   .box {
     padding: 5%;
   }

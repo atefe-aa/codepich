@@ -1,7 +1,9 @@
+import LazyBackground from "../components/LazyBackground";
+
 function Services() {
   return (
     <>
-      <section className="aboutus-section w-100 p-0">
+      <LazyBackground src="/assets/img/bg-341.svg" className="aboutus-section w-100 p-0">
         <div className="container">
           <div className="row pt-3">
             <div className="text-top mt-5 pt-6">
@@ -21,7 +23,7 @@ function Services() {
             </div>
           </div>
         </div>
-      </section>
+      </LazyBackground>
       <section className="step-section w-100 px-0 py-5">
         <div className="container">
           <div className="row align-items-center mb-4">

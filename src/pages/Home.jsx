@@ -11,10 +11,13 @@ import "swiper/css/navigation";
 // import required modules
 import { EffectCards, Navigation } from "swiper/modules";
 import { Element } from "react-scroll";
+import Loading from "../components/Loading";
+import LazyImage from "../components/LazyImage";
 
 function Home() {
   return (
     <main>
+      {/* <Loading /> */}
       <Element name="section1">
         <section
           className={`container-fluid content-header ${styles.bgMainPage}`}
@@ -56,7 +59,7 @@ function Home() {
                   باشد و شما با خیال راحت سفارش خود را ثبت کنید.
                 </p>
               </div>
-              <div className="col-12 col-md-5 col-div">
+              <div className={`col-12 col-md-5 col-div ${styles.colDiv}`}>
                 <div className="row h-100">
                   <div className="col-10 offset-1 d-flex justify-content-evenly align-items-center h-100">
                     <div className= {`d-flex justify-content-around align-items-center flex-column ${styles.services}`}>
@@ -163,7 +166,8 @@ function Home() {
                   className={styles.mySwiper}
                 >
                   <SwiperSlide className={styles.swiperSlide}>
-                    <img
+                    <LazyImage
+                    // loading="lazy"
                       src="assets/img/project1.svg"
                       alt="project-1"
                       className={`img-fluid ${styles.img_fluid}`}
@@ -171,6 +175,7 @@ function Home() {
                   </SwiperSlide>
                   <SwiperSlide className={styles.swiperSlide}>
                     <img
+                    loading="lazy"
                       src="assets/img/project1.svg"
                       alt="project1"
                       className={`img-fluid ${styles.img_fluid}`}
@@ -178,6 +183,7 @@ function Home() {
                   </SwiperSlide>
                   <SwiperSlide className={styles.swiperSlide}>
                     <img
+                    loading="lazy"
                       src="assets/img/project2.svg"
                       alt="project2"
                       className={`img-fluid ${styles.img_fluid}`}
@@ -185,6 +191,7 @@ function Home() {
                   </SwiperSlide>
                   <SwiperSlide className={styles.swiperSlide}>
                     <img
+                    loading="lazy"
                       src="assets/img/project3.svg"
                       alt="project3"
                       className={`img-fluid ${styles.img_fluid}`}
@@ -192,6 +199,7 @@ function Home() {
                   </SwiperSlide>
                   <SwiperSlide className={styles.swiperSlide}>
                     <img
+                    loading="lazy"
                       src="assets/img/project4.svg"
                       alt="project3"
                       className={`img-fluid ${styles.img_fluid}`}

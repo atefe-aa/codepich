@@ -154,12 +154,23 @@
 @media all and (max-width: 768px) {
   .about_us_para {
     font-size: 11px;
-    border-right: 2px solid #fff;
-    padding-right: 15px;
-    line-height: 24.4px;
+    line-height: 22px;
     margin: 0 0 20px 0;
   }
-
+  .colDiv{
+    position: absolute;
+    bottom:-380px
+  }
+  .services_div {
+    position: relative;
+    padding-top: 20vh;
+  }
+  .services{
+    margin-right: 10px;
+  }
+  .services:first-child{
+    margin-right: auto;
+  }
   .row_div {
     margin-top: 140px;
     width: 120vw;

@@ -1,0 +1,13 @@
+.loader {
+  position: absolute;
+  height: 100vh;
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.loader img{
+    width: 20%;
+}

@@ -93,6 +93,13 @@ a:hover {
   margin-right: -200px;
 } */
 
+.about-us-para {
+  font-size: 14px;
+  border-right: 2px solid #fff;
+  padding-right: 15px;
+  line-height: 24.4px;
+  margin: 0 20px 0 100px;
+}
 
 
 /* Media query */
@@ -270,7 +277,13 @@ input::-webkit-input-placeholder {
   .item-menu {
     display: none;
   }
-
+  .about-us-para {
+    font-size: 11px;
+    border-right: 2px solid #fff;
+    padding-right: 15px;
+    line-height: 24.4px;
+    margin: 0 0 20px 0;
+  }
   .bar-li {
     display: block !important;
   }
@@ -366,7 +379,7 @@ input::-webkit-input-placeholder {
 /* ?About-us-page */
 .aboutus-section,
 .step-section {
-  background: url("/assets/img/bg-341.svg");
+  /* background: url("/assets/img/bg-341.svg"); */
   background-size: cover;
   height: 100vh;
   color: #fff;
