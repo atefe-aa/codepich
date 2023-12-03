@@ -1,4 +1,8 @@
 .mainDiv {
+  position:fixed;
+  top: 90px;
+  z-index: 10000;
+  /* margin: auto 10%; */
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -9,9 +13,7 @@
     opacity: 1;
   }
 .formContactUsPage {
-  position: absolute;
-  z-index: 10000;
-  margin: auto 10%;
+
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);

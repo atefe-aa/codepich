@@ -5,10 +5,9 @@ import Success from "../components/Success";
 
 function ContactUs() {
   const { formState, handleSubmit, register, reset } = useForm();
-  const { isPending, submitForm, data } = useSubmitForm();
+  const { isPending, submitForm } = useSubmitForm();
   const { errors } = formState;
   const [showSuccess, setShowSuccess] = useState(false);
-  const [error, setError] = useState(data?.error || null);
 
   function onSubmit(data) {
     submitForm(data, {
@@ -16,13 +15,11 @@ function ContactUs() {
         reset();
         setShowSuccess(true);
       },
-      onError:(error)=>setError(error),
     });
   }
 
   return (
     <>
-    {error  && <div className="text-danger bg-danger-outline rounded">{error}</div>}
       {showSuccess && (
         <Success show={showSuccess} handleClose={() => setShowSuccess(false)} />
       )}
@@ -37,7 +34,11 @@ function ContactUs() {
               </p>
             </div>
             <div className="col-12 col-md-10 offset-0 offset-md-1 mt-5 form-contact-us-page mb-5">
-              <form autoComplete="off" onSubmit={handleSubmit(onSubmit)} className="form-page form">
+              <form
+                autoComplete="off"
+                onSubmit={handleSubmit(onSubmit)}
+                className="form-page form"
+              >
                 <h6>اطلاعات تماس شما</h6>
                 <div className="d-flex">
                   <div
@@ -53,11 +54,12 @@ function ContactUs() {
                       })}
                       name="name"
                       placeholder="نام و نام خانوداگی :"
-                    />  {errors?.name && (
-                    <span className="text-info">{errors.name.message}</span>
-                  )}
+                    />{" "}
+                    {errors?.name && (
+                      <span className="text-info">{errors.name.message}</span>
+                    )}
                   </div>
-                
+
                   <div className=" input-div-special input-div">
                     <input
                       disabled={isPending}
@@ -74,11 +76,11 @@ function ContactUs() {
                       })}
                       placeholder="شماره تلفن : "
                       style={{ direction: "rtl" }}
-                    /> {errors?.phone && (
-                    <span className="text-info">{errors.phone.message}</span>
-                  )}
+                    />{" "}
+                    {errors?.phone && (
+                      <span className="text-info">{errors.phone.message}</span>
+                    )}
                   </div>
-                 
                 </div>
                 <div className="input-group input-div">
                   <input
@@ -106,7 +108,9 @@ function ContactUs() {
                   ></textarea>
                 </div>
                 {errors?.description && (
-                  <span className="text-info">{errors.description.message}</span>
+                  <span className="text-info">
+                    {errors.description.message}
+                  </span>
                 )}
                 <h6 className="my-3 ps-1">جزییات شرکت</h6>
                 <div className="input-group input-div">
@@ -120,7 +124,9 @@ function ContactUs() {
                   />
                 </div>
                 {errors?.about_company && (
-                  <span className="text-info">{errors.about_company.message}</span>
+                  <span className="text-info">
+                    {errors.about_company.message}
+                  </span>
                 )}
                 <button className="btn-custom mt-2">درخواست مشاوره</button>
               </form>

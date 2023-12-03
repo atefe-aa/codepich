@@ -50,10 +50,10 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
     $to='atefe@bime.see5.net';
     $subject = 'consult request';
 
-    $message = 'name: '.$name  .' <br /> ' .'email: ' . $email  .' <br /> ' .'phone: ' . $phone ;
-    $message .= !is_null($budget) ?  ' <br /> ' .'budget: ' . $budget :"";
-    $message .= !is_null($description) ? ' <br /> ' .'description: ' . $description : "";
-    $message .= !is_null($about_company) ?  ' <br /> ' .'about company: ' . $about_company : "";
+    $message = '<h4>name:</h4> '.$name  .' <br /> ' .'<h4>email: </h4>' . $email  .' <br /> ' .'<h4>phone:</h4> ' . $phone ;
+    $message .= !is_null($budget) ?  ' <br /> ' .'<h4>budget:</h4> ' . $budget :"";
+    $message .= !is_null($description) ? ' <br /> ' .'<h4>description: </h4>' . $description : "";
+    $message .= !is_null($about_company) ?  ' <br /> ' .'<h4>about company:</h4> ' . $about_company : "";
 
     mail($to,$subject, $message, $headers);
     echo json_encode(['success' => 'success']);
