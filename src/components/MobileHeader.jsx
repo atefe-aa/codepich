@@ -16,12 +16,12 @@ function MobileHeader() {
         className={styles.hamburger}
         onClick={() => setIsOpen((open) => !open)}
       >
-        <img src="assets/img/menu-icon.svg" />
+        <img src="/assets/img/menu-icon.svg" />
       </button>
 
       <Link className={styles.logo} to="/"   onClick={scrollToTop}>
         <img
-          src="assets/img/logo-white.svg"
+          src="/assets/img/logo-white.svg"
           className={styles.logoImg}
           alt="logo-codepich"
         />

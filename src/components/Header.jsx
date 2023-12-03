@@ -54,7 +54,7 @@ function Header() {
         <li className="logo">
           <NavLink to="/" onClick={scrollToTop}>
             <img
-              src="assets/img/logo-white.svg"
+              src="/assets/img/logo-white.svg"
               className={styles.logoImg}
               alt="logo-codepich"
             />

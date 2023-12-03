@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { scrollToTop } from "../utils/helpers";
 
 function TeamCV() {
   return (
@@ -106,6 +108,7 @@ function TeamCV() {
                   آینده
                 </p>
               </div>
+              <Link onClick={scrollToTop} to='/about/mahan' className="showMoreBtn">نمایش بیشتر</Link>
             </div>
             <div className="col-12 col-md-4 position-relative">
               <div className="glass-bg atefe">
@@ -118,8 +121,9 @@ function TeamCV() {
                   آینده
                 </p>
               </div>
+              <Link onClick={scrollToTop} to='/about/atefe' className="showMoreBtn">نمایش بیشتر</Link>
             </div>
-            <div className="col-12 col-md-4 position-relative offset-0 offset-md-2">
+            <div className="col-12 col-md-4 position-relative offset-0 offset-md-2 mb-5">
               <div className="glass-bg amir">
                 <p className="description-cv-p mt-2">
                   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
@@ -130,6 +134,7 @@ function TeamCV() {
                   آینده
                 </p>
               </div>
+              <Link onClick={scrollToTop} to='/about/amir' className="showMoreBtn">نمایش بیشتر</Link>
             </div>
             <div className="col-12 col-md-4 position-relative mb-5">
               <div className="glass-bg zahra">
@@ -142,6 +147,7 @@ function TeamCV() {
                   آینده
                 </p>
               </div>
+              <Link onClick={scrollToTop} to='/about/zahra' className="showMoreBtn">نمایش بیشتر</Link>
             </div>
           </div>
         </div>

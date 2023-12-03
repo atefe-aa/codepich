@@ -8,15 +8,15 @@ function HamburgerMenu({ handleClose }) {
   return (
     <div ref={ref} onClick={handleClose} className={styles.itemsDiv}>
       <button className={styles.closeButton} onClick={handleClose}>
-        <img src="assets/img/closeButton.svg" />
+        <img src="/assets/img/closeButton.svg" />
       </button>
       <li className={styles.itemMenu}>
-        <Link to="services" onClick={scrollToTop}>
+        <Link to="/services" onClick={scrollToTop}>
           خدمات
         </Link>
       </li>
       <li className={styles.itemMenu}>
-        <Link to="process" onClick={scrollToTop}>
+        <Link to="/process" onClick={scrollToTop}>
           فرآیند
         </Link>
       </li>
