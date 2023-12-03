@@ -1,5 +1,5 @@
 export async function submitForm(formData) {
-  const res = await fetch("/assets/php/sendEmailOnSubmit.php", {
+  const res = await fetch(" /server/sendEmailOnSubmit.php", {
     method: "POST",
     body: JSON.stringify(formData),
     headers:{
