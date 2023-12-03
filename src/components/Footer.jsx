@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="section container-fluid content-header bg-contact-us">
       <div className="row">
-        <div className="col-12 col-md-6 mt-md-5 mx-5 mx-md-5">
+        <div className="col-12 col-md-6 mt-md-5">
           <Form />
         </div>
       </div>

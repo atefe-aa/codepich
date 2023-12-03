@@ -152,8 +152,8 @@ a:hover {
   overflow-x: hidden;
   color: #fff;
   width: 105vw;
-  padding: 0;
-  margin: 0 -6px;
+  /* padding: 0;
+  margin: 0 -6px; */
 }
 
 /* ?Contact-us page */
@@ -278,11 +278,11 @@ a:hover {
   } */
 
  
-
+/* 
   .bg-contact-us .col-12 {
     padding: 14px 0 0 0;
     padding-right: 0 !important;
-  }
+  } */
 
   .aboutus-section {
     background-position: bottom !important;
@@ -322,9 +322,9 @@ a:hover {
   overflow-y: visible !important;
 }
 
-.bg-contact-us .col-12 {
+/* .bg-contact-us .col-12 {
   padding: 70px 110px 0 0;
-}
+} */
 
 /* ?About-us-page */
 .aboutus-section,

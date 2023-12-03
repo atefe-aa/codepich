@@ -1,5 +1,7 @@
+import { BASE_URL } from "../utils/consts";
+
 export async function submitForm(formData) {
-  const res = await fetch(" https://bime.see5.net/server/sendEmailOnSubmit.php", {
+  const res = await fetch( `${BASE_URL}/server/sendEmailOnSubmit.php`, {
     method: "POST",
     body: JSON.stringify(formData),
     headers:{
@@ -10,6 +12,5 @@ export async function submitForm(formData) {
     console.error("Error parsing JSON:", error);
     return res.text(); // Log the raw response
   });
-  console.log(data)
-
+return data;
 }
