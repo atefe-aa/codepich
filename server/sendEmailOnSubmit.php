@@ -33,14 +33,28 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
         echo json_encode(['error' => 'Invalid email']);
         exit();
     }
+
     $phone = filter_var($formData['phone'], FILTER_SANITIZE_NUMBER_INT);
-    $budget = $formData['budget'] ?filter_var($formData['budget'], FILTER_SANITIZE_NUMBER_INT): '';
+
+    $budget = isset($formData['budget']) && !empty($formData['budget']) ?
+        filter_var($formData['budget'], FILTER_SANITIZE_NUMBER_INT): null;
+
+    $about_company = isset($formData['about_company']) && !empty($formData['about_company']) ?
+         htmlspecialchars($formData['about_company']) : null;
+
+    $description = isset($formData['description']) && !empty($formData['description']) ?
+        htmlspecialchars($formData['description']) : null;
 
     $headers = 'Content-Type: text/html; charset=utf-8';
 
     $to='atefe@bime.see5.net';
     $subject = 'consult request';
-    $message = 'name: '.$name  .' <br /> ' .'email: ' . $email  .' <br /> ' .'phone: ' . $phone .' <br /> ' .'budget: ' . $budget;
+
+    $message = 'name: '.$name  .' <br /> ' .'email: ' . $email  .' <br /> ' .'phone: ' . $phone ;
+    $message .= $budget &&  ' <br /> ' .'budget: ' . $budget;
+    $message .= $description &&  ' <br /> ' .'description: ' . $description;
+    $message .= $about_company &&  ' <br /> ' .'about company: ' . $about_company;
+
     mail($to,$subject, $message, $headers);
     echo json_encode(['success' => 'success']);
 }
