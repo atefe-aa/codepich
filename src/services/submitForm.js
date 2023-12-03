@@ -1,5 +1,5 @@
 export async function submitForm(formData) {
-  const res = await fetch("https://bime.see5.net/php/sendEmailOnSubmit.php", {
+  const res = await fetch("https://bime.see5.net/src/php/sendEmailOnSubmit.php", {
     method: "POST",
     body: JSON.stringify(formData),
     headers:{
