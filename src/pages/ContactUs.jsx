@@ -8,6 +8,7 @@ function ContactUs() {
   const { isPending, submitForm } = useSubmitForm();
   const { errors } = formState;
   const [showSuccess, setShowSuccess] = useState(false);
+  const [error, setError] = useState(null);
 
   function onSubmit(data) {
     console.log(data)
@@ -16,11 +17,13 @@ function ContactUs() {
         reset();
         setShowSuccess(true);
       },
+      onError:(error)=>setError(error),
     });
   }
 
   return (
     <>
+    {error  && <div className="text-danger bg-danger-outline rounded">{error}</div>}
       {showSuccess && (
         <Success show={showSuccess} handleClose={() => setShowSuccess(false)} />
       )}
