@@ -18,13 +18,13 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
         exit();
     }
 
-    if(!isset($formData['name'], $formData['email'],$formData['phone'], $formData['budget'])
-     || empty($formData['name']) ||  empty($formData['email']) || empty($formData['phone'])){
+    if(!isset($formData['name'], $formData['email'],$formData['phone'])
+        || empty($formData['name']) ||  empty($formData['email']) || empty($formData['phone'])){
         http_response_code(400);
         echo json_encode(['error'=>'missing fields']);
         exit();
     }
- 
+
     // Access form fields
     $name = htmlspecialchars($formData['name'], ENT_QUOTES, 'UTF-8');
     $email = filter_var($formData['email'], FILTER_SANITIZE_EMAIL);
@@ -40,7 +40,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
         filter_var($formData['budget'], FILTER_SANITIZE_NUMBER_INT): null;
 
     $about_company = isset($formData['about_company']) && !empty($formData['about_company']) ?
-         htmlspecialchars($formData['about_company']) : null;
+        htmlspecialchars($formData['about_company']) : null;
 
     $description = isset($formData['description']) && !empty($formData['description']) ?
         htmlspecialchars($formData['description']) : null;
@@ -51,9 +51,9 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
     $subject = 'consult request';
 
     $message = 'name: '.$name  .' <br /> ' .'email: ' . $email  .' <br /> ' .'phone: ' . $phone ;
-    $message .= $budget &&  ' <br /> ' .'budget: ' . $budget;
-    $message .= $description &&  ' <br /> ' .'description: ' . $description;
-    $message .= $about_company &&  ' <br /> ' .'about company: ' . $about_company;
+    $message .= !is_null($budget) ?  ' <br /> ' .'budget: ' . $budget :"";
+    $message .= !is_null($description) ? ' <br /> ' .'description: ' . $description : "";
+    $message .= !is_null($about_company) ?  ' <br /> ' .'about company: ' . $about_company : "";
 
     mail($to,$subject, $message, $headers);
     echo json_encode(['success' => 'success']);

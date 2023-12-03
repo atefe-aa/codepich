@@ -11,7 +11,6 @@ function ContactUs() {
   const [error, setError] = useState(data?.error || null);
 
   function onSubmit(data) {
-    console.log(data)
     submitForm(data, {
       onSuccess: () => {
         reset();
