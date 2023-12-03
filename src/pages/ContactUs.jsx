@@ -5,10 +5,10 @@ import Success from "../components/Success";
 
 function ContactUs() {
   const { formState, handleSubmit, register, reset } = useForm();
-  const { isPending, submitForm } = useSubmitForm();
+  const { isPending, submitForm, data } = useSubmitForm();
   const { errors } = formState;
   const [showSuccess, setShowSuccess] = useState(false);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState(data?.error || null);
 
   function onSubmit(data) {
     console.log(data)
