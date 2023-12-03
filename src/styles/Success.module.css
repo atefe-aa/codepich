@@ -2,7 +2,12 @@
   width: 100vw;
   display: flex;
   justify-content: center;
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
 }
+.mainDiv.active {
+    opacity: 1;
+  }
 .formContactUsPage {
   position: absolute;
   z-index: 10000;

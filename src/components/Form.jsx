@@ -21,7 +21,7 @@ function Form() {
 
   return (
     <>
-      {showSuccess && <Success handleClose={() => setShowSuccess(false)} />}
+      {showSuccess && <Success show={showSuccess} handleClose={() => setShowSuccess(false)} />}
       <span className={styles.formTitle}>
         یک قدم تا وبسایت رویاهایتان مانده است
       </span>
