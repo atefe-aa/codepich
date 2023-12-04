@@ -1,0 +1,115 @@
+/* ?Person-ability */
+.person_ability {
+  background: #873ebf !important;
+  border-radius: 8px;
+}
+
+.bg_about_person {
+  background: url("/assets/img/bg-about-person.svg");
+  background-position: center top;
+  background-size: cover 100%;
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.aboutDiv {
+  position: relative;
+}
+
+.personPicture {
+  position: absolute;
+  top: -20%;
+  right: 20%;
+}
+.personPicture img {
+  border-radius: 13px;
+  width: 70%;
+}
+.titleBox {
+  display: flex;
+  align-items: center;
+}
+.ability_title {
+  background: #873ebf;
+}
+
+.hrLine {
+  width: 70%;
+  height: 2px;
+  background: #873ebf;
+}
+
+.skills {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.svgDiv {
+  width: 20%;
+}
+.svg {
+  width: 100%;
+}
+.logo {
+  width: 40px;
+}
+
+.ability_person {
+  min-height: 150px;
+  padding: 20px;
+}
+
+.name {
+  font-size: 24px;
+  align-items: center;
+  height: 100px;
+}
+
+.glass_bg_2 {
+  background: rgba(225, 225, 225, 0.6);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  /* backdrop-filter: blur(50px); */
+  border: 1px solid rgba(210, 210, 210, 0.3);
+  color: #fff;
+  border-radius: 12px;
+  padding: 20px 25px;
+  line-height: 30px;
+}
+.smallCircle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .personPicture {
+    top: -30%;
+    right: 30%;
+  } 
+   .personPicture  img{
+    width: 60%;
+  }
+  .ability_title {
+    font-size: smaller;
+  }
+  .skills {
+    padding: 0 0 20px 0;
+    justify-content: center; /* Adjust as needed for smaller screens */
+  }
+  .bigCircle {
+    display: none;
+  }
+  .smallCircle {
+    display: block;
+  }
+  .svgDiv {
+    width: 80px;
+    height: 80px;
+  }
+  .svg {
+    width: 100%;
+  }
+  .logo {
+    width: 25px;
+  }
+}
