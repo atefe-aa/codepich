@@ -30,18 +30,21 @@ input::-webkit-input-placeholder {
   color: #fff !important;
 }
 
-.form button {
+.formButton {
   color: #fff;
   background: transparent;
   border: 1px solid #fff;
- 
-  width: 65%;
+ text-align: center;
+ font-weight: bold;
+ font-size: larger;
+padding-top: 10px;
+ width: 65%;
   height: 45px;
   border-radius: 13px;
   transition: all 300ms ease;
 }
 
-.form button:hover {
+.formButton:hover {
   color: #000;
   background: #fff;
 }
@@ -66,7 +69,7 @@ input::-webkit-input-placeholder {
         font-size: 12px;
       }
       
-      .form button {
+      .formButton {
         width: 55%;
         height: 35px;
       }

@@ -155,7 +155,7 @@ a:hover {
   background: url("/assets/img/background-contact-us.svg");
   background-position: center;
   background-size: cover;
-  /* height: 100vh; */
+  height: 100vh;
   overflow-x: hidden;
   color: #fff;
   width: 105vw;

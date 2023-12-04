@@ -95,9 +95,9 @@ function Form() {
           <span className={styles.formError}>{errors.budget.message}</span>
         )}
 
-        <button className="btn-custom mt-2" disabled={isPending}>
+        <div className={`btn-custom mt-2 ${styles.formButton}`} disabled={isPending}>
           درخواست مشاوره
-        </button>
+        </div>
       </form>
     </>
   );
