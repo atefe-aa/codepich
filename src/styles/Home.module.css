@@ -10,7 +10,7 @@
 }
 
 .bgMainPage {
-  background: url("/assets/img/bg-main.svg");
+  background: url("/assets/img/backgrounds/bg-main.jpg");
   background-position: center top;
   background-size: cover;
   color: #fff;
@@ -18,7 +18,7 @@
 }
 
 .bgServices {
-  background: url("/assets/img/bg-services-home.png");
+  background: url("/assets/img/backgrounds/bg-services-home.png");
   background-position: 100% 100%;
   background-size: cover;
   color: #fff;
@@ -30,7 +30,7 @@
   bottom: 0;
 }
 /* .services {
-  background: url("/assets/img/img-322.svg");
+  background: url("/assets/img/backgrounds/img-322.jpg");
   padding: 3% 4% 6% 4%;
 } */
 .div_about_team {
@@ -56,7 +56,7 @@
 /* ?ABout Us Section */
 .about_us_section,
 .bg_team_cv {
-  background: url("/assets/img/background-about-us.svg");
+  background: url("/assets/img/backgrounds/background-about-us.jpg");
   background-position: center top;
   background-size: cover 100%;
   height: 100vh;

@@ -5,7 +5,7 @@
 }
 
 .bg_about_person {
-  background: url("/assets/img/bg-about-person.svg");
+  background: url("/assets/img/backgrounds/bg-about-person.jpg");
   background-position: center top;
   background-size: cover 100%;
   color: #fff;

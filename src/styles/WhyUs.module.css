@@ -1,5 +1,5 @@
 .section1 {
-    background: url("/assets/img/whyus-bg2.svg");
+    background: url("/assets/img/backgrounds/whyus-bg2.jpg");
     background-position: center top;
     background-size: cover;
     height: 100vh;
@@ -17,7 +17,7 @@
     width: 30%;
   }
   .bg2 {
-    background: url("/assets/img/bg2-whyus.jpg");
+    background: url("/assets/img/backgrounds/bg2-whyus.jpg");
     background-position: center -130px;
     background-size: cover 100%;
   }
