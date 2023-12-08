@@ -27,14 +27,14 @@
 }
 .services_div {
   position: absolute;
-  bottom: 0;
+  bottom: 1.5%;
 }
-/* .services {
+ .services {
   background: url("/assets/img/backgrounds/img-322.jpg");
   padding: 3% 4% 6% 4%;
-} */
+} 
 .div_about_team {
-  margin: 100px 0 -100px 0;
+  /* margin: 100px 0 -100px 0; */
 }
 
 .about_us_para {
@@ -42,7 +42,7 @@
   border-right: 2px solid #fff;
   padding-right: 15px;
   line-height: 24.4px;
-  margin: 0 20px 0 100px;
+  /* margin: 0 20px 0 100px; */
 }
 
 .img_with_border {

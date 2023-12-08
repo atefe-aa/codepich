@@ -37,7 +37,7 @@ input::-webkit-input-placeholder {
   text-align: center;
   font-weight: bold;
   font-size: larger;
-  padding-top: 2%;
+  padding-top: 1%;
   width: 65%;
   height: 45px;
   border-radius: 13px;
@@ -70,7 +70,6 @@ input::-webkit-input-placeholder {
   }
 
   .formButton {
-    padding-top: 1%;
     width: 55%;
     height: 35px;
   }
