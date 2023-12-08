@@ -8,7 +8,7 @@ function Form() {
   const { formState, handleSubmit, register, reset } = useForm();
   const { isPending, submitForm } = useSubmitForm();
   const { errors } = formState;
-  const [showSuccess, setShowSuccess] = useState(true);
+  const [showSuccess, setShowSuccess] = useState(false);
 
   function onSubmit(data) {
     submitForm(data, {
