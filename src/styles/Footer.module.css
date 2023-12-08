@@ -1,8 +1,14 @@
+.icons {
+  width: 80vw;
+  margin-top: 25px;
+} 
 .icon {
+  margin-left: 10px;
   width: 3rem;
 }
 @media only screen and (max-width: 768px) {
-  .icon {
-    width: 1.5rem;
-  }
+   .icons {
+    display: flex;
+    justify-content: space-between;
+  } 
 }

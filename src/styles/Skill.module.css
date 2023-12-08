@@ -1,0 +1,32 @@
+.svgDiv {
+  width: 20vw;
+}
+.svg {
+  width: 100%;
+}
+.logo {
+  width: 40px;
+}
+
+.small {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .big {
+    display: none;
+  }
+  .small {
+    display: block;
+  }
+  .svgDiv {
+    width: 80px;
+    height: 80px;
+  }
+  .svg {
+    width: 100%;
+  }
+  .logo {
+    width: 25px;
+  }
+}

@@ -11,7 +11,7 @@ function Footer() {
       </div>
       <div className="m-5 d-flex flex-column">
         <span className="form-title">راه های ارتباط با ما : </span>
-        <div>
+        <div className={styles.icons}>
           <a className=" ms-1" href="http://t.me/tobeconfi">
             <img
               className={`image-fluid ${styles.icon}`}

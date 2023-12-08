@@ -1,4 +1,4 @@
-.form{
+.form {
   margin-right: 40px;
 }
 .formTitle {
@@ -34,11 +34,11 @@ input::-webkit-input-placeholder {
   color: #fff;
   background: transparent;
   border: 1px solid #fff;
- text-align: center;
- font-weight: bold;
- font-size: larger;
-padding-top: 10px;
- width: 65%;
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  padding-top: 2%;
+  width: 65%;
   height: 45px;
   border-radius: 13px;
   transition: all 300ms ease;
@@ -49,33 +49,33 @@ padding-top: 10px;
   background: #fff;
 }
 
-.formError{
-    color: #ec0606f1;
-    margin: 10px;
+.formError {
+  color: #ec0606f1;
+  margin: 10px;
 }
 
-@media only screen and (max-width:768px) {
-    .formTitle {
-        font-size: 12px;
-      }
-      
-      .inputDiv{
-        margin: 7px auto;
-      }
-      .inputDiv input {
-        width: 55%;
-        height: 35px;
-        padding: 0 10px;
-        font-size: 12px;
-      }
-      
-      .formButton {
-        width: 55%;
-        height: 35px;
-      }
-      
-      
-      .formError{
-        font-size: small;
-      }
+@media only screen and (max-width: 768px) {
+  .formTitle {
+    font-size: 12px;
+  }
+
+  .inputDiv {
+    margin: 7px auto;
+  }
+  .inputDiv input {
+    width: 55%;
+    height: 35px;
+    padding: 0 10px;
+    font-size: 12px;
+  }
+
+  .formButton {
+    padding-top: 1%;
+    width: 55%;
+    height: 35px;
+  }
+
+  .formError {
+    font-size: small;
+  }
 }

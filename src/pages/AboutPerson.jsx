@@ -1,13 +1,14 @@
 import { Link, Navigate, useParams } from "react-router-dom";
 import { teamMembersData } from "../utils/consts";
 import styles from "../styles/AboutPerson.module.css";
+import Skill from "../components/Skill";
 
 function AboutPerson() {
   const { name } = useParams();
   const data = teamMembersData[name];
 
   if (!data) return <Navigate to="/404" replace />;
-  
+
   return (
     <section className={`overflow-x-hidden ${styles.bg_about_person}`}>
       <div className={`container mt-5 ${styles.person_ability}`}>
@@ -121,48 +122,7 @@ function AboutPerson() {
                 </div>
                 <div className={`${styles.skills}`}>
                   {data.skills.map((skill) => (
-                    <div className={styles.svgDiv} key={skill.title}>
-                      <svg className={styles.svg}>
-                        <circle
-                          cx="50"
-                          cy="50"
-                          r="40"
-                          stroke="#693194"
-                          strokeWidth="10"
-                          fill="none"
-                          strokeDasharray={(
-                            2 *
-                            Math.PI *
-                            40 *
-                            (skill.percentage / 100)
-                          ).toFixed(2)}
-                          transform="rotate(-90 50 50)" // Rotate the circle to start from the top (0 degrees)
-                          className={styles.bigCircle}
-                        />
-                        <circle
-                          cx="50"
-                          cy="30"
-                          r="25"
-                          stroke="#693194"
-                          strokeWidth="8"
-                          fill="none"
-                          strokeDasharray={(
-                            2 *
-                            Math.PI *
-                            30 *
-                            (skill.percentage / 100)
-                          ).toFixed(2)}
-                          transform="rotate(-90 50 50)" // Rotate the circle to start from the top (0 degrees)
-                          className={styles.smallCircle}
-                        />
-                        <image
-                          x="24%"
-                          y="25%"
-                          xlinkHref={skill.logo}
-                          className={styles.logo}
-                        />
-                      </svg>
-                    </div>
+                    <Skill key={skill.title} skill={skill} />
                   ))}
                 </div>
               </div>

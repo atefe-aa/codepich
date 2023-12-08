@@ -88,39 +88,63 @@ export const teamMembersData = {
     ],
     interests: ["موسیقی", "ورزش"],
   },
-  mahan: {
+  mahan:{
     name: "ماهان",
-    jobTitle: "بک اند دولوپر",
-    picture: "",
-    about: "",
-    phone: "",
-    linkedIn: "",
-    instagram: "",
-    telegram: "",
-    languages: [{ title: "14774", rating: 8 }],
+    jobTitle: "برنامه نویس بک اند",
+    picture: "/assets/img/members/zahra.png",
+    about:
+      "برنامه نویس بک اند هستم که 4 سالی میشه در حوضه وب فعالیت میکنم و یک سال هستش که دارم تخصصی در سمت بک اند وبسایت ها کار میکنم",
+    phone: "09158027458",
+    linkedIn: "https://www.linkedin.com/in/mahan-mahmodi-4a58a2278/",
+    instagram: "https://www.instagram.com/WAHAWN_",
+    telegram: "https://t.me/exiteboy",
+    languages: [{ title: "انگلیسی", rating: 5 }] /** rating integer from 1-8 */,
     educations: [
-      {
-        title: "12",
-        description: "2422424",
-      },
+   
     ],
     experiments: [
       {
-        title: "2",
-        fromDate: "مهر1394",
-        toDate: "تیر1402",
-        description: "",
+        title: "طراحی سایت ",
+        fromDate: "بهمن 1397",
+        toDate: "تا کنون",
+        description: "به صورت فریلنسر در حوضه طراحی سایت مشغول بودم و تجربه کار در شرکت رو ندارم",
       },
     ],
     skills: [
       {
-        title: "155",
-        logo: "",
-        percentage: "",
+        title: "جنگو",
+        logo: "/assets/img/skills/photoshop.svg",
+        percentage: 80,
+      },
+      {
+        title: "داکر",
+        logo: "/assets/img/skills/illustrator.svg",
+        percentage: 80,
+      },
+   {
+        title: "پی اچ پی",
+        logo: "/assets/img/skills/illustrator.svg",
+        percentage: 70,
+      },
+   {
+        title: "گیت",
+        logo: "/assets/img/skills/illustrator.svg",
+        percentage: 80,
+      },
+   {
+        title: "وردپرس",
+        logo: "/assets/img/skills/illustrator.svg",
+        percentage: 80,
+      },
+   {
+        title: "سئو",
+        logo: "/assets/img/skills/illustrator.svg",
+        percentage: 50,
       },
     ],
-    interests: ["686", "868"],
+    interests: ["موسیقی", "ورزش", "گیم", "کد زدن"],
   },
+
   amir: {
     name: "امیر",
     jobTitle: "فرانت اند دولوپر",
