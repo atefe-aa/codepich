@@ -5,16 +5,31 @@ export const teamMembersData = {
     name: "زهرا",
     jobTitle: "گرافیست",
     picture: "/assets/img/members/zahra.jpg",
-    about:
-      "زهرا علی عسسگریا ن گرافیست زهرا علی عسسگریا ن گرافیست زهرا علی عسسگریا ن گرافیست زهرا علی عسسگریا ن گرافیست زهرا علی عسسگریا ن گرافیست ",
-    phone: "01234567891",
-    linkedIn: "https://www.linkedin.com/in/zahraid",
-    instagram: "https://www.instagram.com/zaraid",
-    telegram: "https://t.me/zahraid",
-    languages: [{ title: "انگلیسی", rating: 5 }] /** rating integer from 1-8 */,
+    about:`سلام! من یک گرافیست با تجربه ام، که از سال1397در دنیای گرافیک فعالیت می کنم.
+    در طی این سال ها، عشقم به هنر و خلاقیت من را به سمت ایجاد آثار بصری زیبا و جذاب
+    هدایت کرده است`,
+    contacts: [
+      { link: "", value: "09055966823", logo: "/assets/img/phone.svg" },
+      {
+        link: "https://www.linkedin.com/in/zahra-asgariyan-9b385b292",
+        value: "لینکدین",
+        logo: "/assets/img/linkdin.svg",
+      },
+      {
+        link: "https://t.me/asgariyan12",
+        value: "تلگرام",
+        logo: "/assets/img/telegram.svg",
+      },
+        {
+        link: "https://www.instagram.com/_zahraasgariyan_",
+        value: "اینستاگرام",
+        logo: "/assets/img/instagram.svg",
+      },
+    ],
+    languages: [{ title: "انگلیسی", rating: 4 }] /** rating integer from 1-8 */,
     educations: [
       {
-        title: "کارشناسی",
+        title: "کاردانی",
         description: "دانشگاه اصفهان از سال 1400",
       },
     ],
@@ -30,7 +45,7 @@ export const teamMembersData = {
       {
         title: "فتوشاپ",
         logo: "/assets/img/skills/photoshop.svg",
-        percentage: 100,
+        percentage: 80,
       },
       {
         title: "ایلاستریتور",
@@ -38,14 +53,18 @@ export const teamMembersData = {
         percentage: 80,
       },
       {
-        title: "افنرافکت",
-        logo: "/assets/img/skills/aftereffect.svg",
-        percentage: 50,
+        title: "ایکس دی",
+        logo: "/assets/img/skills/xd.svg",
+        percentage: 100,
       },
       {
         title: "پریمیر",
         logo: "/assets/img/skills/premiere.svg",
-        percentage: 90,
+        percentage: 50,
+      },  {
+        title: "corel draw",
+        logo: "/assets/img/skills/coreldraw.svg",
+        percentage: 70,
       },
     ],
     interests: ["موسیقی", "ورزش"],
@@ -54,8 +73,8 @@ export const teamMembersData = {
     name: "عاطفه",
     jobTitle: "فول استک دولوپر",
     picture: "/assets/img/members/atefe.jpg",
-    about: `علاقه عمیق من به حل مسایل منطقی باعث شد که به سمت توسعه وب بروم تا آن اشتیاق را به یک حرفه تبدیل کنم. زمانی که با یک چالش مواجه می شوم، رویکرد من شامل جست و جو  کامل در مورد همه راه حل های ممکن و تست راه حل ها و انتخاب دقیق مؤثرترین آنها است. 
-    هدف من برای آینده نزدیک گنجاندن هوش مصنوعی در پروژه های لاراول و تسلط بر این تلاقی فناوری ها است.`,
+    about: `علاقه عمیق من به حل مسایل منطقی باعث شد که به سمت توسعه وب بروم تا آن اشتیاق را به یک حرفه تبدیل کنم. 
+    هدف من برای آینده نزدیک گنجاندن هوش مصنوعی در پروژه های لاراول و تسلط بر این تلاقی فناوری ها است. `,
     contacts: [
       { link: "", value: "09100520741", logo: "/assets/img/phone.svg" },
       {
@@ -144,7 +163,7 @@ export const teamMembersData = {
         fromDate: "بهمن 1397",
         toDate: "تا کنون",
         description:
-          "به صورت فریلنسر در حوضه طراحی سایت مشغول بودم و تجربه کار در شرکت رو ندارم",
+          "به صورت فریلنسر در حوضه طراحی سایت مشغول بودم ",
       },
     ],
     skills: [

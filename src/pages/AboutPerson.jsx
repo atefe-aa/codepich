@@ -52,7 +52,7 @@ function AboutPerson() {
               className="rounded p-4 position-relative"
               style={{ background: "rgba(214, 214, 214, 0.95)" }}
             >
-              {data.educations.legth > 0 && (
+              {data.educations.length > 0 && (
                 <div className="education">
                   <div className={styles.titleBox}>
                     <h6

@@ -6,7 +6,7 @@ function Language({ data }) {
 
   return (
     <div className={styles.main}>
-      <span className="me-2 w-10">{data.title}</span>
+      <span className={styles.title}>{data.title}</span>
       <div className={styles.ratingDiv}>
         {fillArr.map((_, index) => (
           <svg
