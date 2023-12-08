@@ -1,7 +1,9 @@
-import { Link, Navigate, useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import { teamMembersData } from "../utils/consts";
 import styles from "../styles/AboutPerson.module.css";
 import Skill from "../components/Skill";
+import PersonContact from "../components/PersonContact";
+import Language from "../components/Language";
 
 function AboutPerson() {
   const { name } = useParams();
@@ -36,60 +38,41 @@ function AboutPerson() {
               </div>
             </div>
 
-            <div className={`rounded-5 p-2 mt-4  ${styles.glass_bg_2}`}>
-              <img src="/assets/img/phone.svg" alt="phone" className="w-10" />
-              <span className="ms-2">{data.phone} </span>
-            </div>
-            <div className={`rounded-5 p-2 mt-4  ${styles.glass_bg_2}`}>
-              <img src="/assets/img/linkdin.svg" alt="phone" className="w-10" />
-              <Link to={data.linkedIn} className="ms-2">
-                لینکدین
-              </Link>
-            </div>
-            <div className={`rounded-5 p-2 mt-4 ${styles.glass_bg_2}`}>
-              <img
-                src="/assets/img/instagram.svg"
-                alt="phone"
-                className="w-10"
-              />
-              <Link to={data.instagram} className="ms-2">
-                اینستاگرام
-              </Link>
-            </div>
-            <div className={`rounded-5 p-2 mt-4  ${styles.glass_bg_2}`}>
-              <img
-                src="/assets/img/telegram.svg"
-                alt="phone"
-                className="w-10"
-              />
-              <Link to={data.telegram} className="ms-2">
-                تلگرام
-              </Link>
-            </div>
+            {data.contacts.map((contact) => (
+              <PersonContact key={contact.value} data={contact} />
+            ))}
+
+<div className="mt-5">
+                <b> زبان ها:</b>
+               {data.languages?.length > 0 && data.languages.map((language)=><Language key={language.title}  data={language}/>)}
+              </div>
           </div>
           <div className="col-12 col-md-9 p-2">
             <div
               className="rounded p-4 position-relative"
               style={{ background: "rgba(214, 214, 214, 0.95)" }}
             >
-              <div className="education">
-                <div className={styles.titleBox}>
-                  <h6
-                    className={`p-2 rounded-3 d-inline ${styles.ability_title}`}
-                  >
-                    تحصیلات
-                  </h6>
-                  <div className={styles.hrLine}></div>
+              {data.educations.legth > 0 && (
+                <div className="education">
+                  <div className={styles.titleBox}>
+                    <h6
+                      className={`p-2 rounded-3 d-inline ${styles.ability_title}`}
+                    >
+                      تحصیلات
+                    </h6>
+                    <div className={styles.hrLine}></div>
+                  </div>
+                  <div className={styles.ability_person}>
+                    {data.educations.map((edu) => (
+                      <div key={edu.title}>
+                        <h6>{edu.title}</h6>
+                        <p>{edu.description}</p>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-                <div className={styles.ability_person}>
-                  {data.educations.map((edu) => (
-                    <div key={edu.title}>
-                      <h6>{edu.title}</h6>
-                      <p>{edu.description}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
+              )}
+
               <div className="sabeghe">
                 <div className={styles.titleBox}>
                   <h6

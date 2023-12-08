@@ -8,7 +8,7 @@
   background: url("/assets/img/backgrounds/bg-about-person.jpg");
   background-position: center top;
   background-size: cover 100%;
-  color: #fff;
+  color: #4C0D59;
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -18,7 +18,7 @@
 
 .personPicture {
   position: absolute;
-  top: -25%;
+  top: -5rem;
   right: 20%;
 }
 .personPicture img {
@@ -30,6 +30,7 @@
   align-items: center;
 }
 .ability_title {
+  color: #fff;
   background: #873ebf;
 }
 
