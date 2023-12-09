@@ -19,7 +19,7 @@ function Process() {
         </div>
 
         <div className={`${styles.pic} ${styles.magniPic}`}>
-          <img className="img-fluid" src="/assets/img/magnifire.svg" alt="magnifire on an app icon" />
+          <img className="img-fluid" src="/assets/img/svg/magnifire.svg" alt="magnifire on an app icon" />
         </div>
       </div>
 
@@ -35,7 +35,7 @@ function Process() {
         </div>
         <div className={`${styles.pic} ${styles.whiteboardMan}`}>
           <img className="img-fluid"
-            src="/assets/img/whiteboardMan.svg"
+            src="/assets/img/svg/whiteboardMan.svg"
             alt="a guy writing on a whiteboard"
           />
         </div>
@@ -64,7 +64,7 @@ function Process() {
         </div>
         <div className={`${styles.pic} ${styles.uiDesigner}`}>
           <img className="img-fluid"
-            src="/assets/img/ui-designer.svg"
+            src="/assets/img/svg/ui-designer.svg"
             alt="a guy working with computer designing UI"
           />
         </div>
@@ -95,14 +95,14 @@ function Process() {
         </div>
         <div className={`${styles.pic} ${styles.computerPic}`}>
           <img className="img-fluid"
-            src="/assets/img/computer.svg"
+            src="/assets/img/svg/computer.svg"
             alt="a gir smaller than a computer, codding"
           />
         </div>
       </div>
 
       <div className={styles.cycle}>
-        <img className="img-fluid" src="/assets/img/developping-cycle.svg" />
+        <img className="img-fluid" src="/assets/img/svg/developping-cycle.svg" />
       </div>
 
       <StepTag stepTitle="مرحله چهار" />
@@ -128,7 +128,7 @@ function Process() {
         </div>
         <div className={`${styles.pic} ${styles.maintainPic}`}>
           <img className="img-fluid"
-            src="/assets/img/maintain.svg"
+            src="/assets/img/svg/maintain.svg"
             alt="a gir on ladder try to stick an element to a screen"
           />
         </div>

@@ -9,21 +9,21 @@ export const teamMembersData = {
     در طی این سال ها، عشقم به هنر و خلاقیت من را به سمت ایجاد آثار بصری زیبا و جذاب
     هدایت کرده است`,
     contacts: [
-      { link: "", value: "09055966823", logo: "/assets/img/phone.svg" },
+      { link: "", value: "09055966823", logo: "/assets/img/icons/phone.svg" },
       {
         link: "https://www.linkedin.com/in/zahra-asgariyan-9b385b292",
         value: "لینکدین",
-        logo: "/assets/img/linkdin.svg",
+        logo: "/assets/img/icons/linkdin.svg",
       },
       {
         link: "https://t.me/asgariyan12",
         value: "تلگرام",
-        logo: "/assets/img/telegram.svg",
+        logo: "/assets/img/icons/telegram.svg",
       },
         {
         link: "https://www.instagram.com/_zahraasgariyan_",
         value: "اینستاگرام",
-        logo: "/assets/img/instagram.svg",
+        logo: "/assets/img/icons/instagram.svg",
       },
     ],
     languages: [{ title: "انگلیسی", rating: 4 }] /** rating integer from 1-8 */,
@@ -72,20 +72,20 @@ export const teamMembersData = {
   atefe: {
     name: "عاطفه",
     jobTitle: "فول استک دولوپر",
-    picture: "/assets/img/members/atefe.jpg",
+    picture: "/assets/img/members/zahra.jpg",
     about: `علاقه عمیق من به حل مسایل منطقی باعث شد که به سمت توسعه وب بروم تا آن اشتیاق را به یک حرفه تبدیل کنم. 
     هدف من برای آینده نزدیک گنجاندن هوش مصنوعی در پروژه های لاراول و تسلط بر این تلاقی فناوری ها است. `,
     contacts: [
-      { link: "", value: "09100520741", logo: "/assets/img/phone.svg" },
+      { link: "", value: "09100520741", logo: "/assets/img/icons/phone.svg" },
       {
         link: "https://www.linkedin.com/in/atefe-ali-asgariyan-85983b269",
         value: "لینکدین",
-        logo: "/assets/img/linkdin.svg",
+        logo: "/assets/img/icons/linkdin.svg",
       },
       {
         link: "https://t.me/tobeconfi",
         value: "تلگرام",
-        logo: "/assets/img/telegram.svg",
+        logo: "/assets/img/icons/telegram.svg",
       },
     ],
     languages: [
@@ -137,21 +137,21 @@ export const teamMembersData = {
     about:
       "برنامه نویس بک اند هستم که 4 سالی میشه در حوضه وب فعالیت میکنم و یک سال هستش که دارم تخصصی در سمت بک اند وبسایت ها کار میکنم",
     contacts: [
-      { link: "", value: "09158027458", logo: "/assets/img/phone.svg" },
+      { link: "", value: "09158027458", logo: "/assets/img/icons/phone.svg" },
       {
         link: "https://www.linkedin.com/in/mahan-mahmodi-4a58a2278/",
         value: "لینکدین",
-        logo: "/assets/img/linkdin.svg",
+        logo: "/assets/img/icons/linkdin.svg",
       },
       {
         link: "https://www.instagram.com/WAHAWN_",
         value: "اینستاگرام",
-        logo: "/assets/img/instagram.svg",
+        logo: "/assets/img/icons/instagram.svg",
       },
       {
         link: "https://t.me/exiteboy",
         value: "تلگرام",
-        logo: "/assets/img/telegram.svg",
+        logo: "/assets/img/icons/telegram.svg",
       },
     ],
 
@@ -208,21 +208,21 @@ export const teamMembersData = {
     about:
       "برنامه نویس بک اند هستم که 4 سالی میشه در حوضه وب فعالیت میکنم و یک سال هستش که دارم تخصصی در سمت بک اند وبسایت ها کار میکنم",
     contacts: [
-      { link: "", value: "09158027458", logo: "/assets/img/phone.svg" },
+      { link: "", value: "09158027458", logo: "/assets/img/icons/phone.svg" },
       {
         link: "https://www.linkedin.com/in/mahan-mahmodi-4a58a2278/",
         value: "لینکدین",
-        logo: "/assets/img/linkdin.svg",
+        logo: "/assets/img/icons/linkdin.svg",
       },
       {
         link: "https://www.instagram.com/WAHAWN_",
         value: "اینستاگرام",
-        logo: "/assets/img/instagram.svg",
+        logo: "/assets/img/icons/instagram.svg",
       },
       {
         link: "https://t.me/exiteboy",
         value: "تلگرام",
-        logo: "/assets/img/telegram.svg",
+        logo: "/assets/img/icons/telegram.svg",
       },
     ],
 

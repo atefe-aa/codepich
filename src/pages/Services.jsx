@@ -1,5 +1,3 @@
-import LazyBackground from "../components/LazyBackground";
-
 function Services() {
   return (
     <>
@@ -52,7 +50,7 @@ function Services() {
             </div>
             <div className="col-12 col-md-7 col-lg-6 d-flex justify-content-center">
               <img
-                src="assets/img/computer-c-432.svg"
+                src="/assets/img/svg/computer-c-432.svg"
                 alt="computer-img"
                 className="img-fluid w-75"
               />
@@ -61,7 +59,7 @@ function Services() {
           <div className="row align-items-center mb-4">
             <div className="col-12 col-md-7 col-lg-6 d-flex justify-content-center order-last order-md-first">
               <img
-                src="assets/img/uiux.svg"
+                src="/assets/img/svg/uiux.svg"
                 alt="computer-img"
                 className="img-fluid w-75"
               />

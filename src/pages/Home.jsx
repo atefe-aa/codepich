@@ -25,7 +25,7 @@ function Home() {
         mousewheel={true}
         modules={[Mousewheel]}
         className="mySwiper"
-        speed={1000}
+        speed={800}
       >
         {/* <Loading /> */}
         <SwiperSlide>
@@ -76,7 +76,7 @@ function Home() {
                           className={`d-flex justify-content-around align-items-center ${styles.img_with_border}`}
                         >
                           <img
-                            src="../assets/img/code.svg"
+                            src="/assets/img/icons/code.svg"
                             alt="code-icon"
                             className="img-fluid"
                           />
@@ -91,7 +91,7 @@ function Home() {
                           className={`d-flex justify-content-around align-items-center ${styles.img_with_border}`}
                         >
                           <img
-                            src="../assets/img/ui.svg"
+                            src="/assets/img/icons/ui.svg"
                             alt="ui-icon"
                             className="img-fluid"
                           />
@@ -106,7 +106,7 @@ function Home() {
                           className={`d-flex justify-content-around align-items-center ${styles.img_with_border}`}
                         >
                           <img
-                            src="../assets/img/android.svg"
+                            src="/assets/img/icons/android.svg"
                             alt="android-icon"
                             className="img-fluid"
                           />
@@ -121,7 +121,7 @@ function Home() {
                           className={`d-flex justify-content-around align-items-center ${styles.img_with_border}`}
                         >
                           <img
-                            src="../assets/img/ios.svg"
+                            src="/assets/img/icons/ios.svg"
                             alt="ios-icon"
                             className="img-fluid"
                           />
@@ -139,7 +139,7 @@ function Home() {
           <section
             className={`section w-100 container-fluid ${styles.about_us_section}`}
           >
-            <div className="container">
+            <div className="container pt-5">
               <div className="row content-header h-auto pt-5">
                 <div className="row h-100">
                   <div className="col-12 h-100 d-flex justify-content-center align-items-end">
@@ -169,7 +169,7 @@ function Home() {
                   <div className="row">
                     <div className="col-12 col-lg-9 offset-0 offset-lg-3">
                       <img
-                        src="../assets/img/img-services.svg"
+                        src="/assets/img/svg/img-services.svg"
                         alt="web-design-img"
                         className="img-fluid"
                       />

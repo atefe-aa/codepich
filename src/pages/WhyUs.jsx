@@ -98,14 +98,14 @@ function WhyUs() {
         <section className={styles.section4}>
           <div className={styles.teamPart}>
             <div className="d-flex justify-content-end">
-              <img className={styles.teamImage} src="/assets/img/team.svg" />
+              <img className={styles.teamImage} src="/assets/img/svg/team.svg" />
             </div>
 
             <div
               className={`${styles.personContainer} ${styles.atefe}  ${styles.personRight}`}
             >
               <div className={styles.personPic}>
-                <img src="assets/img/atefe-pic.svg" />
+                <img src="/assets/img/svg/atefe-pic.svg" />
               </div>
               <div className={styles.personName}>عاطفه</div>
               <p className={styles.aboutPerson}>
@@ -126,7 +126,7 @@ function WhyUs() {
               className={`${styles.personContainer} ${styles.mahan} ${styles.personLeft}`}
             >
               <div className={styles.personPic}>
-                <img src="assets/img/mahan-pic.svg" />
+                <img src="/assets/img/svg/mahan-pic.svg" />
               </div>
               <div className={styles.personName}>ماهان</div>
               <p className={styles.aboutPerson}>
@@ -146,7 +146,7 @@ function WhyUs() {
               className={`${styles.personContainer} ${styles.zahra} ${styles.personRight}`}
             >
               <div className={styles.personPic}>
-                <img src="assets/img/zahra-pic.svg" />
+                <img src="/assets/img/svg/zahra-pic.svg" />
               </div>
               <div className={styles.personName}>زهرا</div>
               <p className={styles.aboutPerson}>
@@ -164,7 +164,7 @@ function WhyUs() {
               className={`${styles.personContainer} ${styles.amir} ${styles.personLeft}`}
             >
               <div className={styles.personPic}>
-                <img src="assets/img/amir-pic.svg" />
+                <img src="/assets/img/svg/amir-pic.svg" />
               </div>
               <div className={styles.personName}>امیر</div>
               <p className={styles.aboutPerson}>

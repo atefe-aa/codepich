@@ -9,37 +9,37 @@ function Footer() {
           <Form />
         </div>
       </div>
-      <div className="m-5 d-flex flex-column">
-        <span className="form-title">راه های ارتباط با ما : </span>
+      <div className="ms-5 mt-3 d-flex flex-column">
+        <span className={styles.formTitle}>راه های ارتباط با ما : </span>
         <div className={styles.icons}>
           <a className=" ms-1" href="http://t.me/tobeconfi">
             <img
               className={`image-fluid ${styles.icon}`}
-              src="/assets/img/telegram-logo.svg"
+              src="/assets/img/icons/telegram-logo.svg"
             />
           </a>
           <a className=" ms-1" href="http://t.me/tobeconfi">
             <img
               className={`image-fluid ${styles.icon}`}
-              src="/assets/img/instagram-logo.svg"
+              src="/assets/img/icons/instagram-logo.svg"
             />
           </a>
           <a className=" ms-1" href="http://t.me/tobeconfi">
             <img
               className={`image-fluid ${styles.icon}`}
-              src="/assets/img/x-logo.svg"
+              src="/assets/img/icons/x-logo.svg"
             />
           </a>
           <a className=" ms-1" href="http://t.me/tobeconfi">
             <img
               className={`image-fluid ${styles.icon}`}
-              src="/assets/img/linkedin-logo.svg"
+              src="/assets/img/icons/linkedin-logo.svg"
             />
           </a>
           <a className=" ms-1" href="http://t.me/tobeconfi">
             <img
               className={`image-fluid ${styles.icon}`}
-              src="/assets/img/facebook-logo.svg"
+              src="/assets/img/icons/facebook-logo.svg"
             />
           </a>
         </div>

@@ -20,25 +20,25 @@ export default function SwiperCards() {
       navigation={true}
     >
       <SwiperSlide className={styles.swiperSlide}>
-        <img src="/assets/img/project-1.svg" alt="project-1" />
+        <img src="/assets/img/projects/project-1.svg" alt="project-1" />
       </SwiperSlide>
       <SwiperSlide className={styles.swiperSlide}>
-        <img src="/assets/img/project4.svg" alt="project1" />
+        <img src="/assets/img/projects/project1.svg" alt="project1" />
       </SwiperSlide>
       <SwiperSlide className={styles.swiperSlide}>
-        <img src="/assets/img/project2.svg" alt="project2" />
+        <img src="/assets/img/projects/project2.svg" alt="project2" />
       </SwiperSlide>
       <SwiperSlide className={styles.swiperSlide}>
-        <img src="/assets/img/project4.svg" alt="project2" />
+        <img src="/assets/img/projects/project4.svg" alt="project2" />
       </SwiperSlide>
       <SwiperSlide className={styles.swiperSlide}>
-        <img src="/assets/img/project3.svg" alt="project2" />
+        <img src="/assets/img/projects/project3.svg" alt="project2" />
       </SwiperSlide>
       <SwiperSlide className={styles.swiperSlide}>
-        <img src="/assets/img/project4.svg" alt="project2" />
+        <img src="/assets/img/projects/project4.svg" alt="project2" />
       </SwiperSlide>
       <SwiperSlide className={styles.swiperSlide}>
-        <img src="/assets/img/project2.svg" alt="project2" />
+        <img src="/assets/img/projects/project2.svg" alt="project2" />
       </SwiperSlide>
     </Swiper>
   );

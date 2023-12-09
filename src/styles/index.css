@@ -51,25 +51,6 @@ a:hover {
   height: 60%;
 }
 
-/* .bg-main-page {
-  background: url("/assets/img/backgrounds/backgound.svg");
-  background-position: center top;
-  background-size: cover;
-  color: #fff;
-  height: 500px;
-} */
-
-/* ! .header::before TO Fix bug of the project ! */
-/* .header::before {
-  content: "";
-  width: 100%;
-  height: 2px;
-  background: #fff;
-  position: absolute;
-  top: 65px;
-  z-index: 5;
-} */
-
 .team-cv {
   font-size: 15px;
   cursor: pointer;
@@ -87,11 +68,6 @@ a:hover {
   padding: 0 25px;
   cursor: pointer;
 }
-
-/* img[alt="logo-codepich"] {
-  width: 100px;
-  margin-right: -200px;
-} */
 
 .about-us-para {
   font-size: 14px;
@@ -433,6 +409,9 @@ input::-webkit-input-placeholder {
   margin-top: -1px;
 }
 
+.projectPic{
+  /* width: 90%; */
+}
 .btn-more-cv {
   bottom: 22px;
   right: 50%;

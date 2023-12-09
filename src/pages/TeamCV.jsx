@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { scrollToTop } from "../utils/helpers";
+import Project from "../components/Project";
 
 function TeamCV() {
   return (
@@ -16,7 +17,7 @@ function TeamCV() {
                 </p>
               </div>
               <img
-                src="assets/img/img-139.svg"
+                src="/assets/img/svg/img-139.svg"
                 alt="img-computer"
                 className="img-fluid w-25 img-cv"
               />
@@ -27,58 +28,13 @@ function TeamCV() {
       <section className="cv-section w-100 h-auto py-5">
         <div className="container cv-container card border-white bg-transparent rounded-4">
           <div className="row pt-5 g-0">
-            <div className="col-12 col-md-6 position-relative">
-              <img
-                src="assets/img/project1.svg"
-                alt="project1"
-                className="img-fluid"
-              />
-              <button
-                type="button"
-                className="btn btn-dark position-absolute btn-more-cv py-3 px-4"
-              >
-                نمایش بیشتر
-              </button>
-            </div>
-            <div className="col-12 col-md-6 position-relative">
-              <img
-                src="assets/img/project2.svg"
-                alt="project2"
-                className="img-fluid"
-              />
-              <button
-                type="button"
-                className="btn btn-dark position-absolute btn-more-cv py-3 px-4"
-              >
-                نمایش بیشتر
-              </button>
-            </div>
-            <div className="col-12 col-md-6 position-relative">
-              <img
-                src="assets/img/project3.svg"
-                alt="project3"
-                className="img-fluid"
-              />
-              <button
-                type="button"
-                className="btn btn-dark position-absolute btn-more-cv py-3 px-4"
-              >
-                نمایش بیشتر
-              </button>
-            </div>
-            <div className="col-12 col-md-6 position-relative ">
-              <img
-                src="assets/img/project4.svg"
-                alt="project4"
-                className="img-fluid"
-              />
-              <button
-                type="button"
-                className="btn btn-dark position-absolute btn-more-cv py-3 px-4"
-              >
-                نمایش بیشتر
-              </button>
-            </div>
+
+            <Project src="/assets/img/projects/project1.svg" link='/project1' />
+            <Project src="/assets/img/projects/project1.svg" link='/project1' />
+            <Project src="/assets/img/projects/project1.svg" link='/project1' />
+            <Project src="/assets/img/projects/project-1.svg" link='/project1' />
+        
+
           </div>
         </div>
         <div className="team-member w-100 h-auto py-5 container mt-5">
@@ -90,7 +46,7 @@ function TeamCV() {
           <div className="row">
             <div className="col-12 d-flex justify-content-center pt-4">
               <img
-                src="assets/img/img2429.svg"
+                src="/assets/img/svg/img2429.svg"
                 alt="img-team"
                 className="img-fluid w-75"
               />

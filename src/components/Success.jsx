@@ -7,7 +7,7 @@ function Success({ handleClose, show }) {
     <div className={`${styles.mainDiv} ${show ? styles.active : ""}`}>
       <div ref={ref} onClick={handleClose} className={styles.formContactUsPage}>
         <button className={styles.closeButton} onClick={handleClose}>
-          <img src="/assets/img/closeButton.svg" />
+          <img src="/assets/img/icons/closeButton.svg" />
         </button>
         <div className="text-center m-5">
           <h1>
@@ -15,7 +15,7 @@ function Success({ handleClose, show }) {
             <span>
               <img
                 className={styles.successImg}
-                src="/assets/img/success.svg"
+                src="/assets/img/svg/success.svg"
               />
             </span>
           </h1>

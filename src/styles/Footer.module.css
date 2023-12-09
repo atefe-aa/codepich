@@ -1,3 +1,6 @@
+.formTitle{
+  font-size: large;
+}
 .icons {
   width: 80vw;
   margin-top: 25px;
@@ -11,4 +14,7 @@
     display: flex;
     justify-content: space-between;
   } 
+  .icon {
+    width: 2.5rem;
+  }
 }
