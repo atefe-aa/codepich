@@ -1,0 +1,117 @@
+/* ?CodePich-CV */
+.codepich_cv {
+  background: url("/assets/img/backgrounds/img-342.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  height: 100vh !important;
+}
+
+.div_cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 150px 0 0;
+}
+
+.img_cv {
+  position: absolute;
+  bottom: 10px;
+  right: 25px;
+}
+
+.cv_section {
+  background: url("/assets/img/backgrounds/img-218.jpg");
+  background-size: cover;
+  background-position: top;
+  margin-top: -1px;
+}
+
+.projectPic{
+
+    border-radius: 12px;
+}
+.btn_more_cv {
+  bottom: -20px;
+  right: 50%;
+  transform: translate(50%, -0);
+}
+
+.btn_more_cvs {
+  background: #212529;
+  color: #fff;
+  border-radius: 0.5rem;
+  width: fit-content;
+  padding: 1rem 1.5rem;
+  position: absolute;
+  bottom: -25px;
+  right: 50%;
+  transform: translate(50%, -0);
+  cursor: pointer;
+}
+/* teamMember */
+.title_team_member {
+  font-family: "estedad-exb";
+  font-size: 20px;
+  color: #350c5a;
+  display: flex;
+  justify-content: center;
+}
+
+.glass_bg {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(210, 210, 210, 0.3);
+  color: #fff;
+  border-radius: 12px;
+  padding: 20px 25px;
+  line-height: 30px;
+}
+.mahan::before,
+.atefe::before,
+.amir::before,
+.zahra::before {
+  content: "ماهان";
+  background: rgba(243, 243, 243, 0.4);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(210, 210, 210, 0.4);
+  color: #fff;
+  border-radius: 12px;
+  padding: 8px 22px;
+  position: absolute;
+  top: -27px;
+  cursor: pointer;
+}
+
+.atefe::before {
+  content: "عاطفه";
+}
+.amir::before {
+  content: "امیر";
+}
+.zahra::before {
+  content: "زهرا";
+}
+
+.showMoreBtn {
+  color: #efefef;
+  background: #8815ef;
+  padding: 16px 26px;
+  border-radius: 12px;
+  position: absolute;
+  left: 40px;
+  bottom: -20px;
+  cursor: pointer;
+}
+
+@media all and (max-width: 768px) {
+    .cv_container {
+      padding-bottom: 50px;
+    }
+  .btn_more_cvs {
+    bottom: -25px;
+  }
+
+}

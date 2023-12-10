@@ -1,17 +1,18 @@
 import { Link } from "react-router-dom";
 import { scrollToTop } from "../utils/helpers";
 import Project from "../components/Project";
+import styles from "../styles/TeamCV.module.css";
 
 function TeamCV() {
   return (
     <>
-      <section className="codepich-cv w-100 text-white">
+      <section className= {`w-100 text-white ${styles.codepich_cv}`}>
         <div className="container">
           <div className="row">
             <div className="col-12 d-flex justify-content-between align-items-center flex-column">
-              <div className="div-cv text-top">
+              <div className={`text-top ${styles.div_cv}`}>
                 <h3 className="mt-5">رزومه تیم کدپیچ</h3>
-                <p className="description-cv-p mt-2">
+                <p className= {`mt-2 ${styles.description_cv_p}`}>
                   تمام نمونه کارهایی که تیم کدپیچ با موفقیت قادر به انجام آنها
                   بوده است
                 </p>
@@ -19,28 +20,35 @@ function TeamCV() {
               <img
                 src="/assets/img/svg/img-139.svg"
                 alt="img-computer"
-                className="img-fluid w-25 img-cv"
+                className={`img-fluid w-25 ${styles.img_cv}`}
               />
             </div>
           </div>
         </div>
       </section>
-      <section className="cv-section w-100 h-auto py-5">
-        <div className="container cv-container card border-white bg-transparent rounded-4">
-          <div className="row pt-5 g-0">
+      <section className={` w-100 h-auto py-5 ${styles.cv_section}`}>
+        <div className={`container  card border-white bg-transparent rounded-4 ${styles.cv_container}`}>
+          <div className="row pt-5 pb-5 g-5">
 
-            <Project src="/assets/img/projects/project1.svg" link='/project1' />
-            <Project src="/assets/img/projects/project1.svg" link='/project1' />
-            <Project src="/assets/img/projects/project1.svg" link='/project1' />
-            <Project src="/assets/img/projects/project-1.svg" link='/project1' />
+            <Project src="/assets/img/projects/tarkhine/tarkhine1.png" link='/project1' />
+            <Project src="/assets/img/projects/theWildOasis/thewildoasis4.png" link='/project1' />
+            <Project src="/assets/img/projects/worldWise/worldwise3.png" link='/project1' />
+            <Project src="/assets/img/projects/visitouriran/visitouriran.png" link='/project1' />
         
 
           </div>
+        <Link
+        to='/projects'
+          type="button"
+          className={`btn btn-dark position-absolute  py-3 px-4 ${styles.btn_more_cvs}`}
+        >
+          نمایش بیشتر
+        </Link>
         </div>
-        <div className="team-member w-100 h-auto py-5 container mt-5">
+        <div className= {`w-100 h-auto py-5 container mt-5 ${styles.team_member}`}>
           <div className="row">
             <div className="col-12">
-              <h6 className="title-team-member">اعضای تیم</h6>
+              <h6 className={styles.title_team_member}>اعضای تیم</h6>
             </div>
           </div>
           <div className="row">
@@ -54,8 +62,8 @@ function TeamCV() {
           </div>
           <div className="row g-5 mt-4">
             <div className="col-12 col-md-4 position-relative offset-0 offset-md-2">
-              <div className="glass-bg mahan">
-                <p className="description-cv-p mt-2">
+              <div className={`${styles.glass_bg} ${styles.mahan}`}>
+                <p className= {`mt-2 ${styles.description_cv_p}`}>
                   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
                   استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
                   مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
@@ -64,11 +72,11 @@ function TeamCV() {
                   آینده
                 </p>
               </div>
-              <Link onClick={scrollToTop} to='/about/mahan' className="showMoreBtn">نمایش بیشتر</Link>
+              <Link onClick={scrollToTop} to='/about/mahan' className={styles.showMoreBtn}>نمایش بیشتر</Link>
             </div>
             <div className="col-12 col-md-4 position-relative">
-              <div className="glass-bg atefe">
-                <p className="description-cv-p mt-2">
+              <div className={`${styles.glass_bg} ${styles.atefe}`}>
+                <p className= {`mt-2 ${styles.description_cv_p}`}>
                   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
                   استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
                   مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
@@ -77,11 +85,11 @@ function TeamCV() {
                   آینده
                 </p>
               </div>
-              <Link onClick={scrollToTop} to='/about/atefe' className="showMoreBtn">نمایش بیشتر</Link>
+              <Link onClick={scrollToTop} to='/about/atefe' className={styles.showMoreBtn}>نمایش بیشتر</Link>
             </div>
             <div className="col-12 col-md-4 position-relative offset-0 offset-md-2 mb-5">
-              <div className="glass-bg amir">
-                <p className="description-cv-p mt-2">
+              <div className={`${styles.glass_bg} ${styles.amir}`}>
+                <p className= {`mt-2 ${styles.description_cv_p}`}>
                   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
                   استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
                   مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
@@ -90,11 +98,11 @@ function TeamCV() {
                   آینده
                 </p>
               </div>
-              <Link onClick={scrollToTop} to='/about/amir' className="showMoreBtn">نمایش بیشتر</Link>
+              <Link onClick={scrollToTop} to='/about/amir' className={styles.showMoreBtn}>نمایش بیشتر</Link>
             </div>
             <div className="col-12 col-md-4 position-relative mb-5">
-              <div className="glass-bg zahra">
-                <p className="description-cv-p mt-2">
+              <div className={`${styles.glass_bg} ${styles.zahra}`}>
+                <p className= {`mt-2 ${styles.description_cv_p}`}>
                   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
                   استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
                   مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
@@ -103,7 +111,7 @@ function TeamCV() {
                   آینده
                 </p>
               </div>
-              <Link onClick={scrollToTop} to='/about/zahra' className="showMoreBtn">نمایش بیشتر</Link>
+              <Link onClick={scrollToTop} to='/about/zahra' className={styles.showMoreBtn}>نمایش بیشتر</Link>
             </div>
           </div>
         </div>

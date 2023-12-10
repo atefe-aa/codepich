@@ -77,14 +77,11 @@ a:hover {
   margin: 0 20px 0 100px;
 }
 
-
 /* Media query */
 @media all and (max-width: 580px) {
   .header-title {
     font-size: 22px;
   }
-
-
 
   .text-top h1 {
     font-family: "estedad-b";
@@ -110,7 +107,6 @@ a:hover {
     font-size: 18px;
   }
 
-
   .content-section {
     margin-top: 20px;
   }
@@ -124,7 +120,6 @@ a:hover {
     font-size: 10px;
   }
 }
-
 
 /* ?Contact-us */
 .bg-contact-us {
@@ -296,15 +291,13 @@ input::-webkit-input-placeholder {
     border-bottom: 1px solid #efefef;
   }
 
-
   /* .row-div {
     margin-top: 140px;
     width: 120vw;
     margin-right: -14vw;
   } */
 
- 
-/* 
+  /* 
   .bg-contact-us .col-12 {
     padding: 14px 0 0 0;
     padding-right: 0 !important;
@@ -335,9 +328,6 @@ input::-webkit-input-placeholder {
   }
 }
 
-
-
-
 /* .header {
   position: fixed;
   z-index: 999;
@@ -355,7 +345,7 @@ input::-webkit-input-placeholder {
 /* ?About-us-page */
 .aboutus-section,
 .step-section {
-   background: url("/assets/img/backgrounds/bg-341.jpg");
+  background: url("/assets/img/backgrounds/bg-341.jpg");
   background-size: cover;
   height: 100vh;
   color: #fff;
@@ -380,127 +370,7 @@ input::-webkit-input-placeholder {
   background: url("/assets/img/backgrounds/bg-321.jpg");
   background-size: contain;
 }
-/* ?CodePich-CV */
-.codepich-cv {
-  background: url("/assets/img/backgrounds/img-342.jpg");
-  background-size: cover;
-  background-position: center bottom;
-  height: 100vh !important;
-}
 
-.div-cv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 150px 0 0;
-}
-
-.img-cv {
-  position: absolute;
-  bottom: 10px;
-  right: 25px;
-}
-
-.cv-section {
-  background: url("/assets/img/backgrounds/img-218.jpg");
-  background-size: cover;
-  background-position: top;
-  margin-top: -1px;
-}
-
-.projectPic{
-  /* width: 90%; */
-}
-.btn-more-cv {
-  bottom: 22px;
-  right: 50%;
-  transform: translate(50%, -0);
-}
-
-.cv-container::after {
-  content: "نمایش بیشتر";
-  background: #212529;
-  color: #fff;
-  border-radius: 0.5rem;
-  width: fit-content;
-  padding: 1rem 1.5rem;
-  position: absolute;
-  bottom: -25px;
-  right: 50%;
-  transform: translate(50%, -0);
-  cursor: pointer;
-}
-/* teamMember */
-.title-team-member {
-  font-family: "estedad-exb";
-  font-size: 20px;
-  color: #350c5a;
-  display: flex;
-  justify-content: center;
-}
-
-.glass-bg {
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  border: 1px solid rgba(210, 210, 210, 0.3);
-  color: #fff;
-  border-radius: 12px;
-  padding: 20px 25px;
-  line-height: 30px;
-}
-.mahan::before,
-.atefe::before,
-.amir::before,
-.zahra::before {
-  content: "ماهان";
-  background: rgba(243, 243, 243, 0.4);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(5px);
-  border: 1px solid rgba(210, 210, 210, 0.4);
-  color: #fff;
-  border-radius: 12px;
-  padding: 8px 22px;
-  position: absolute;
-  top: -27px;
-  cursor: pointer;
-}
-
-.atefe::before {
-  content: "عاطفه";
-}
-.amir::before {
-  content: "امیر";
-}
-.zahra::before {
-  content: "زهرا";
-}
-/* 
-.mahan::after,
-.atefe::after,
-.amir::after {
-  content: "نمایش بیشتر";
-  background: #8815ef;
-  padding: 12px 26px;
-  border-radius: 12px;
-  position: absolute;
-  left: 20px;
-  bottom: -20px;
-  cursor: pointer;
-} */
-
-.showMoreBtn{
- color: #efefef;
-    background: #8815ef;
-    padding: 16px 26px;
-    border-radius: 12px;
-    position: absolute;
-    left: 40px;
-    bottom: -20px;
-    cursor: pointer;
-  
-}
-.w-10{
+.w-10 {
   width: 10%;
 }
