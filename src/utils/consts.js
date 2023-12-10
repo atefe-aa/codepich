@@ -398,137 +398,93 @@ export const PROJECTS = {
       },
     ],
   },
-  tarkhine1: {
+  hostingSite: {
     bigImages: [
       {
-        id: 1222,
-        src: "/assets/img/projects/tarkhine/tarkhine1.png",
-        alt: "tarkhine project",
+        id: 100,
+        src: "/assets/img/projects/hostingSite/hostingSite1.jpg",
+        alt: "hostingSite project",
       },
       {
-        id: 2,
-        src: "/assets/img/projects/tarkhine/tarkhine2.png",
-        alt: "tarkhine project",
+        id: 102,
+        src: "/assets/img/projects/hostingSite/hostingSite2.jpg",
+        alt: "hostingSite project",
       },
       {
-        id: 3,
-        src: "/assets/img/projects/tarkhine/tarkhine3.png",
-        alt: "tarkhine project",
+        id: 103,
+        src: "/assets/img/projects/hostingSite/hostingSite3.jpg",
+        alt: "hostingSite project",
+      },
+      {
+        id: 104,
+        src: "/assets/img/projects/hostingSite/hostingSite4.jpg",
+        alt: "hostingSite project",
       },
     ],
     smallImages: [
       {
-        id: 4,
-        src: "/assets/img/projects/tarkhine/tarkhine1-s.png",
-        alt: "tarkhine project",
-      },
-      {
-        id: 5,
-        src: "/assets/img/projects/tarkhine/tarkhine2-s.png",
-        alt: "tarkhine project",
+        id: 105,
+        src: "/assets/img/projects/hostingSite/hostingSite1-s.jpg",
+        alt: "hostingSite project",
       },
     ],
   },
-  theWildOasis1: {
+  amirLearn: {
     bigImages: [
       {
-        id: 6222,
-        src: "/assets/img/projects/theWildOasis/thewildoasis4.png",
-        alt: "the wild oasis project",
-      },
-      {
-        id: 7,
-        src: "/assets/img/projects/theWildOasis/thewildoasis6.png",
-        alt: "the wild oasis project",
-      },
-      {
-        id: 8,
-        src: "/assets/img/projects/theWildOasis/thewildoasis3.png",
-        alt: "the wild oasis project",
-      },
-      {
-        id: 9,
-        src: "/assets/img/projects/theWildOasis/thewildoasis1.png",
-        alt: "the wild oasis project",
-      },
-      {
-        id: 10,
-        src: "/assets/img/projects/theWildOasis/thewildoasis5.png",
-        alt: "the wild oasis project",
-      },
-      {
-        id: 11,
-        src: "/assets/img/projects/theWildOasis/thewildoasis2.png",
-        alt: "the wild oasis project",
-      },
-    ],
-    smallImages: [
-      {
-        id: 27,
-        src: "/assets/img/projects/theWildOasis/thewildoasis4-s.png",
-        alt: "the wild oasis project",
-      },
-      {
-        id: 32,
-        src: "/assets/img/projects/theWildOasis/thewildoasis3-s.png",
-        alt: "the wild oasis project",
+        id: 106,
+        src: "/assets/img/projects/amirLearn/amirLearn1.jpg",
+        alt: "amir learn project",
       },
     ],
   },
-  worldWise1: {
+  artinShop: {
+    bigImages: [
+      {
+        id: 106,
+        src: "/assets/img/projects/artinShop/artinShop1.jpg",
+        alt: "artin shop project",
+      },
+    ],
+  },
+  bilito: {
     bigImages: [
       {
         id: 12222,
-        src: "/assets/img/projects/worldWise/worldwise3.png",
-        alt: "world wise project",
+        src: "/assets/img/projects/bilito/bilito1.jpg",
+        alt: "bilito project",
       },
       {
         id: 13,
-        src: "/assets/img/projects/worldWise/worldwise2.png",
-        alt: "world wise project",
+        src: "/assets/img/projects/bilito/bilito2.jpg",
+        alt: "bilito project",
       },
       {
         id: 14,
-        src: "/assets/img/projects/worldWise/worldwise1.png",
-        alt: "world wise project",
+        src: "/assets/img/projects/bilito/bilito3.jpg",
+        alt: "bilito project",
       },
       {
         id: 15,
-        src: "/assets/img/projects/worldWise/worldwise4.png",
-        alt: "world wise project",
+        src: "/assets/img/projects/bilito/bilito4.jpg",
+        alt: "bilito project",
       },
       {
         id: 16,
-        src: "/assets/img/projects/worldWise/worldwise5.PNG",
-        alt: "world wise project",
+        src: "/assets/img/projects/bilito/bilito5.jpg",
+        alt: "bilito project",
       },
     ],
     smallImages: [
       {
         id: 28,
-        src: "/assets/img/projects/worldWise/worldwise3-s.png",
-        alt: "world wise project",
+        src: "/assets/img/projects/bilito/bilito1-s.jpg",
+        alt: "bilito project",
       },
       {
         id: 30,
-        src: "/assets/img/projects/worldWise/worldwise2-s.png",
-        alt: "world wise project",
-      },
-    ],
-  },
-  visitOurIran1: {
-    bigImages: [
-      {
-        id: 17222,
-        src: "/assets/img/projects/visitouriran/visitouriran.png",
-        alt: "visit our iran project",
-      },
-    ],
-    smallImages: [
-      {
-        id: 18,
-        src: "/assets/img/projects/visitouriran/visitouriran-s.png",
-        alt: "visit our iran project",
+        src: "/assets/img/projects/bilito/bilito2-s.jpg",
+        alt: "bilito project",
       },
     ],
   },
