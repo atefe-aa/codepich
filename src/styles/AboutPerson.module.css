@@ -19,11 +19,12 @@
 .personPicture {
   position: absolute;
   top: -5rem;
-  right: 20%;
+  right: 25%;
+
 }
 .personPicture img {
   border-radius: 13px;
-  width: 70%;
+  width: 60%;
 }
 .titleBox {
   display: flex;

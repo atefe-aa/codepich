@@ -205,36 +205,35 @@ export const teamMembersData = {
     name: "امیر",
     jobTitle: "برنامه نویس فرانت اند",
     picture: "/assets/img/members/mahan.webp",
-    about:
-      "برنامه نویس بک اند هستم که 4 سالی میشه در حوضه وب فعالیت میکنم و یک سال هستش که دارم تخصصی در سمت بک اند وبسایت ها کار میکنم",
+    about:"",
     contacts: [
-      { link: "", value: "09158027458", logo: "/assets/img/icons/phone.svg" },
+      { link: "", value: "", logo: "/assets/img/icons/phone.svg" },
       {
-        link: "https://www.linkedin.com/in/mahan-mahmodi-4a58a2278/",
+        link: "https://www.linkedin.com/in/",
         value: "لینکدین",
         logo: "/assets/img/icons/linkdin.svg",
       },
       {
-        link: "https://www.instagram.com/WAHAWN_",
+        link: "https://www.instagram.com/",
         value: "اینستاگرام",
         logo: "/assets/img/icons/instagram.svg",
       },
       {
-        link: "https://t.me/exiteboy",
+        link: "https://t.me/",
         value: "تلگرام",
         logo: "/assets/img/icons/telegram.svg",
       },
     ],
 
-    languages: [{ title: "انگلیسی", rating: 5 }] /** rating integer from 1-8 */,
+    languages: [{ title: "", rating: 0 }] /** rating integer from 1-8 */,
     educations: [],
     experiments: [
       {
-        title: "طراحی سایت ",
-        fromDate: "بهمن 1397",
-        toDate: "تا کنون",
+        title: "",
+        fromDate: "",
+        toDate: "",
         description:
-          "به صورت فریلنسر در حوضه طراحی سایت مشغول بودم و تجربه کار در شرکت رو ندارم",
+          "",
       },
     ],
     skills: [
@@ -259,7 +258,7 @@ export const teamMembersData = {
         percentage: 80,
       },
     ],
-    interests: ["موسیقی", "ورزش", "گیم", "کد زدن"],
+    interests: ["", "", "", ""],
   },
 };
 
