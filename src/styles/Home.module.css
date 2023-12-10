@@ -33,9 +33,6 @@
   background: url("/assets/img/backgrounds/img-322.jpg");
   /* padding: 3% 4% 6% 4%; */
 } 
-.div_about_team {
-  /* margin: 100px 0 -100px 0; */
-}
 
 .about_us_para {
   font-size: 14px;
@@ -64,11 +61,11 @@
   width: 100vw;
 }
 .slideSection{
-  width:70vw;
-  height: 70vh;
+  width:750px;
+  height: 490px;
   position: absolute;
-  top:15vh;
-  right:15vw;
+  top:17vh;
+  right:22vw;
 }
 
 .about_us_section_p {
@@ -170,5 +167,12 @@
 
   .div_about_team {
     margin: 0 0 10px 0 !important;
+  }
+  .slideSection{
+    width:250px;
+    height: 500px;
+    position: absolute;
+    top:14vh;
+    right:22vw;
   }
 }

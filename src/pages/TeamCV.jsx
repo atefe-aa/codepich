@@ -30,10 +30,10 @@ function TeamCV() {
         <div className={`container  card border-white bg-transparent rounded-4 ${styles.cv_container}`}>
           <div className="row pt-5 pb-5 g-5">
 
-            <Project src="/assets/img/projects/tarkhine/tarkhine1.png" link='/project1' />
-            <Project src="/assets/img/projects/theWildOasis/thewildoasis4.png" link='/project1' />
-            <Project src="/assets/img/projects/worldWise/worldwise3.png" link='/project1' />
-            <Project src="/assets/img/projects/visitouriran/visitouriran.png" link='/project1' />
+            <Project src="/assets/img/projects/tarkhine/tarkhine1.png" link='/tarkhine' />
+            <Project src="/assets/img/projects/theWildOasis/thewildoasis4.png" link='/theWildOasis' />
+            <Project src="/assets/img/projects/worldWise/worldwise3.png" link='/worldWise' />
+            <Project src="/assets/img/projects/visitouriran/visitouriran.png" link='/visitouriran' />
         
 
           </div>
