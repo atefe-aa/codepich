@@ -401,7 +401,7 @@ export const PROJECTS = {
   tarkhine1: {
     bigImages: [
       {
-        id: 1,
+        id: 1222,
         src: "/assets/img/projects/tarkhine/tarkhine1.png",
         alt: "tarkhine project",
       },
@@ -432,7 +432,7 @@ export const PROJECTS = {
   theWildOasis1: {
     bigImages: [
       {
-        id: 6,
+        id: 6222,
         src: "/assets/img/projects/theWildOasis/thewildoasis4.png",
         alt: "the wild oasis project",
       },
@@ -478,7 +478,7 @@ export const PROJECTS = {
   worldWise1: {
     bigImages: [
       {
-        id: 12,
+        id: 12222,
         src: "/assets/img/projects/worldWise/worldwise3.png",
         alt: "world wise project",
       },
@@ -519,7 +519,7 @@ export const PROJECTS = {
   visitOurIran1: {
     bigImages: [
       {
-        id: 17,
+        id: 17222,
         src: "/assets/img/projects/visitouriran/visitouriran.png",
         alt: "visit our iran project",
       },

@@ -6,10 +6,11 @@ import { PROJECTS } from "../utils/consts";
 import { useState } from "react";
 
 function TeamCV() {
-const [visibleProjects, setVisibleProjects] = useState(4);
-const showMoreProjects = () => {
-  setVisibleProjects(PROJECTS.length);
-};
+  const [visibleProjects, setVisibleProjects] = useState(4);
+  const numProjects = Object.keys(PROJECTS).length;
+  const showMoreProjects = () => {
+    setVisibleProjects((num) => num + 2);
+  };
 
   return (
     <>
@@ -38,22 +39,26 @@ const showMoreProjects = () => {
           className={`container  card border-white bg-transparent rounded-4 ${styles.cv_container}`}
         >
           <div className="row pt-5 pb-5 g-5">
-            {Object.entries(PROJECTS).slice(0, visibleProjects).map(([projectName, projectData]) => (
-              <Project
-                key={projectData.bigImages[0].id}
-                data={projectData}
-                projectName={projectName}
-              />
-            ))}
-             <Outlet />
+            {Object.entries(PROJECTS)
+              .slice(0, visibleProjects)
+              .map(([projectName, projectData]) => (
+                <Project
+                  key={projectData.bigImages[0].id}
+                  data={projectData}
+                  projectName={projectName}
+                />
+              ))}
+            <Outlet />
           </div>
-          <button
-            onClick={showMoreProjects}
-            type="button"
-            className={`btn btn-dark position-absolute  py-3 px-4 ${styles.btn_more_cvs}`}
-          >
-            نمایش بیشتر
-          </button>
+          {visibleProjects !== numProjects && (
+            <button
+              onClick={showMoreProjects}
+              type="button"
+              className={`btn btn-dark position-absolute  py-3 px-4 ${styles.btn_more_cvs}`}
+            >
+              نمایش بیشتر
+            </button>
+          )}
         </div>
         <div
           className={`w-100 h-auto py-5 container mt-5 ${styles.team_member}`}
