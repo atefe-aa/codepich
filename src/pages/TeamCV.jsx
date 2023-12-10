@@ -1,18 +1,19 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { scrollToTop } from "../utils/helpers";
 import Project from "../components/Project";
 import styles from "../styles/TeamCV.module.css";
+import { PROJECTS } from "../utils/consts";
 
 function TeamCV() {
   return (
     <>
-      <section className= {`w-100 text-white ${styles.codepich_cv}`}>
+      <section className={`w-100 text-white ${styles.codepich_cv}`}>
         <div className="container">
           <div className="row">
             <div className="col-12 d-flex justify-content-between align-items-center flex-column">
               <div className={`text-top ${styles.div_cv}`}>
                 <h3 className="mt-5">رزومه تیم کدپیچ</h3>
-                <p className= {`mt-2 ${styles.description_cv_p}`}>
+                <p className={`mt-2 ${styles.description_cv_p}`}>
                   تمام نمونه کارهایی که تیم کدپیچ با موفقیت قادر به انجام آنها
                   بوده است
                 </p>
@@ -27,25 +28,30 @@ function TeamCV() {
         </div>
       </section>
       <section className={` w-100 h-auto py-5 ${styles.cv_section}`}>
-        <div className={`container  card border-white bg-transparent rounded-4 ${styles.cv_container}`}>
-          <div className="row pt-5 pb-5 g-5">
-
-            <Project src="/assets/img/projects/tarkhine/tarkhine1.png" link='/tarkhine' />
-            <Project src="/assets/img/projects/theWildOasis/thewildoasis4.png" link='/theWildOasis' />
-            <Project src="/assets/img/projects/worldWise/worldwise3.png" link='/worldWise' />
-            <Project src="/assets/img/projects/visitouriran/visitouriran.png" link='/visitouriran' />
-        
-
-          </div>
-        <Link
-        to='/projects'
-          type="button"
-          className={`btn btn-dark position-absolute  py-3 px-4 ${styles.btn_more_cvs}`}
+        <div
+          className={`container  card border-white bg-transparent rounded-4 ${styles.cv_container}`}
         >
-          نمایش بیشتر
-        </Link>
+          <div className="row pt-5 pb-5 g-5">
+            {Object.entries(PROJECTS).map(([projectName, projectData]) => (
+              <Project
+                key={projectData.bigImages[0].id}
+                data={projectData}
+                projectName={projectName}
+              />
+            ))}
+             <Outlet />
+          </div>
+          <Link
+            to="/projects"
+            type="button"
+            className={`btn btn-dark position-absolute  py-3 px-4 ${styles.btn_more_cvs}`}
+          >
+            نمایش بیشتر
+          </Link>
         </div>
-        <div className= {`w-100 h-auto py-5 container mt-5 ${styles.team_member}`}>
+        <div
+          className={`w-100 h-auto py-5 container mt-5 ${styles.team_member}`}
+        >
           <div className="row">
             <div className="col-12">
               <h6 className={styles.title_team_member}>اعضای تیم</h6>
@@ -63,7 +69,7 @@ function TeamCV() {
           <div className="row g-5 mt-4">
             <div className="col-12 col-md-4 position-relative offset-0 offset-md-2">
               <div className={`${styles.glass_bg} ${styles.mahan}`}>
-                <p className= {`mt-2 ${styles.description_cv_p}`}>
+                <p className={`mt-2 ${styles.description_cv_p}`}>
                   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
                   استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
                   مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
@@ -72,11 +78,17 @@ function TeamCV() {
                   آینده
                 </p>
               </div>
-              <Link onClick={scrollToTop} to='/about/mahan' className={styles.showMoreBtn}>نمایش بیشتر</Link>
+              <Link
+                onClick={scrollToTop}
+                to="/about/mahan"
+                className={styles.showMoreBtn}
+              >
+                نمایش بیشتر
+              </Link>
             </div>
             <div className="col-12 col-md-4 position-relative">
               <div className={`${styles.glass_bg} ${styles.atefe}`}>
-                <p className= {`mt-2 ${styles.description_cv_p}`}>
+                <p className={`mt-2 ${styles.description_cv_p}`}>
                   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
                   استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
                   مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
@@ -85,11 +97,17 @@ function TeamCV() {
                   آینده
                 </p>
               </div>
-              <Link onClick={scrollToTop} to='/about/atefe' className={styles.showMoreBtn}>نمایش بیشتر</Link>
+              <Link
+                onClick={scrollToTop}
+                to="/about/atefe"
+                className={styles.showMoreBtn}
+              >
+                نمایش بیشتر
+              </Link>
             </div>
             <div className="col-12 col-md-4 position-relative offset-0 offset-md-2 mb-5">
               <div className={`${styles.glass_bg} ${styles.amir}`}>
-                <p className= {`mt-2 ${styles.description_cv_p}`}>
+                <p className={`mt-2 ${styles.description_cv_p}`}>
                   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
                   استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
                   مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
@@ -98,11 +116,17 @@ function TeamCV() {
                   آینده
                 </p>
               </div>
-              <Link onClick={scrollToTop} to='/about/amir' className={styles.showMoreBtn}>نمایش بیشتر</Link>
+              <Link
+                onClick={scrollToTop}
+                to="/about/amir"
+                className={styles.showMoreBtn}
+              >
+                نمایش بیشتر
+              </Link>
             </div>
             <div className="col-12 col-md-4 position-relative mb-5">
               <div className={`${styles.glass_bg} ${styles.zahra}`}>
-                <p className= {`mt-2 ${styles.description_cv_p}`}>
+                <p className={`mt-2 ${styles.description_cv_p}`}>
                   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
                   استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
                   مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
@@ -111,7 +135,13 @@ function TeamCV() {
                   آینده
                 </p>
               </div>
-              <Link onClick={scrollToTop} to='/about/zahra' className={styles.showMoreBtn}>نمایش بیشتر</Link>
+              <Link
+                onClick={scrollToTop}
+                to="/about/zahra"
+                className={styles.showMoreBtn}
+              >
+                نمایش بیشتر
+              </Link>
             </div>
           </div>
         </div>

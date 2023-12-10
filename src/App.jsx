@@ -9,7 +9,7 @@ import Process from "./pages/Process";
 import WhyUs from "./pages/WhyUs";
 import AboutPerson from "./pages/AboutPerson";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import Test from "./pages/Test";
+import Modal from "./components/Modal";
 
 function App() {
   const queryClient = new QueryClient({
@@ -28,7 +28,9 @@ function App() {
             <Route index element={<Navigate replace to="home" />} />
             <Route path="why-us" element={<WhyUs />} />
             <Route path="contact" element={<ContactUs />} />
-            <Route path="team-cv" element={<TeamCV />} />
+            <Route path="team-cv" element={<TeamCV />}>
+              <Route path="project/:projectName" element={<Modal />} />
+            </Route>
             <Route path="services" element={<Services />} />
             <Route path="process" element={<Process />} />
             <Route path="about/:name" element={<AboutPerson />} />
