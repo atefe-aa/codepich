@@ -34,8 +34,9 @@ function Home() {
           >
             <div className="row h-100">
               <div className="col-12 d-flex justify-content-center align-items-center flex-column h-100">
+                <h1 className={styles.header_title}>کد پیچ</h1>
                 <h1 className={styles.header_title}>
-                  کدپیچ | طراحی وبسایت کارآمد مثل پیچ
+                  طراحی وبسایت کارآمد مثل پیچ
                 </h1>
                 <span
                   className={styles.header_description}
@@ -189,8 +190,7 @@ function Home() {
         </SwiperSlide>
         <SwiperSlide>
           <div className={styles.footer}>
-
-          <Footer />
+            <Footer />
           </div>
         </SwiperSlide>
       </Swiper>
