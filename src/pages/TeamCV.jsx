@@ -3,8 +3,14 @@ import { scrollToTop } from "../utils/helpers";
 import Project from "../components/Project";
 import styles from "../styles/TeamCV.module.css";
 import { PROJECTS } from "../utils/consts";
+import { useState } from "react";
 
 function TeamCV() {
+const [visibleProjects, setVisibleProjects] = useState(4);
+const showMoreProjects = () => {
+  setVisibleProjects(PROJECTS.length);
+};
+
   return (
     <>
       <section className={`w-100 text-white ${styles.codepich_cv}`}>
@@ -32,7 +38,7 @@ function TeamCV() {
           className={`container  card border-white bg-transparent rounded-4 ${styles.cv_container}`}
         >
           <div className="row pt-5 pb-5 g-5">
-            {Object.entries(PROJECTS).map(([projectName, projectData]) => (
+            {Object.entries(PROJECTS).slice(0, visibleProjects).map(([projectName, projectData]) => (
               <Project
                 key={projectData.bigImages[0].id}
                 data={projectData}
@@ -41,13 +47,13 @@ function TeamCV() {
             ))}
              <Outlet />
           </div>
-          <Link
-            to="/projects"
+          <button
+            onClick={showMoreProjects}
             type="button"
             className={`btn btn-dark position-absolute  py-3 px-4 ${styles.btn_more_cvs}`}
           >
             نمایش بیشتر
-          </Link>
+          </button>
         </div>
         <div
           className={`w-100 h-auto py-5 container mt-5 ${styles.team_member}`}

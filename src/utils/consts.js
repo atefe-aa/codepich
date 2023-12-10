@@ -398,4 +398,138 @@ export const PROJECTS = {
       },
     ],
   },
+  tarkhine1: {
+    bigImages: [
+      {
+        id: 1,
+        src: "/assets/img/projects/tarkhine/tarkhine1.png",
+        alt: "tarkhine project",
+      },
+      {
+        id: 2,
+        src: "/assets/img/projects/tarkhine/tarkhine2.png",
+        alt: "tarkhine project",
+      },
+      {
+        id: 3,
+        src: "/assets/img/projects/tarkhine/tarkhine3.png",
+        alt: "tarkhine project",
+      },
+    ],
+    smallImages: [
+      {
+        id: 4,
+        src: "/assets/img/projects/tarkhine/tarkhine1-s.png",
+        alt: "tarkhine project",
+      },
+      {
+        id: 5,
+        src: "/assets/img/projects/tarkhine/tarkhine2-s.png",
+        alt: "tarkhine project",
+      },
+    ],
+  },
+  theWildOasis1: {
+    bigImages: [
+      {
+        id: 6,
+        src: "/assets/img/projects/theWildOasis/thewildoasis4.png",
+        alt: "the wild oasis project",
+      },
+      {
+        id: 7,
+        src: "/assets/img/projects/theWildOasis/thewildoasis6.png",
+        alt: "the wild oasis project",
+      },
+      {
+        id: 8,
+        src: "/assets/img/projects/theWildOasis/thewildoasis3.png",
+        alt: "the wild oasis project",
+      },
+      {
+        id: 9,
+        src: "/assets/img/projects/theWildOasis/thewildoasis1.png",
+        alt: "the wild oasis project",
+      },
+      {
+        id: 10,
+        src: "/assets/img/projects/theWildOasis/thewildoasis5.png",
+        alt: "the wild oasis project",
+      },
+      {
+        id: 11,
+        src: "/assets/img/projects/theWildOasis/thewildoasis2.png",
+        alt: "the wild oasis project",
+      },
+    ],
+    smallImages: [
+      {
+        id: 27,
+        src: "/assets/img/projects/theWildOasis/thewildoasis4-s.png",
+        alt: "the wild oasis project",
+      },
+      {
+        id: 32,
+        src: "/assets/img/projects/theWildOasis/thewildoasis3-s.png",
+        alt: "the wild oasis project",
+      },
+    ],
+  },
+  worldWise1: {
+    bigImages: [
+      {
+        id: 12,
+        src: "/assets/img/projects/worldWise/worldwise3.png",
+        alt: "world wise project",
+      },
+      {
+        id: 13,
+        src: "/assets/img/projects/worldWise/worldwise2.png",
+        alt: "world wise project",
+      },
+      {
+        id: 14,
+        src: "/assets/img/projects/worldWise/worldwise1.png",
+        alt: "world wise project",
+      },
+      {
+        id: 15,
+        src: "/assets/img/projects/worldWise/worldwise4.png",
+        alt: "world wise project",
+      },
+      {
+        id: 16,
+        src: "/assets/img/projects/worldWise/worldwise5.PNG",
+        alt: "world wise project",
+      },
+    ],
+    smallImages: [
+      {
+        id: 28,
+        src: "/assets/img/projects/worldWise/worldwise3-s.png",
+        alt: "world wise project",
+      },
+      {
+        id: 30,
+        src: "/assets/img/projects/worldWise/worldwise2-s.png",
+        alt: "world wise project",
+      },
+    ],
+  },
+  visitOurIran1: {
+    bigImages: [
+      {
+        id: 17,
+        src: "/assets/img/projects/visitouriran/visitouriran.png",
+        alt: "visit our iran project",
+      },
+    ],
+    smallImages: [
+      {
+        id: 18,
+        src: "/assets/img/projects/visitouriran/visitouriran-s.png",
+        alt: "visit our iran project",
+      },
+    ],
+  },
 };
