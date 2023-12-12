@@ -123,7 +123,7 @@ a:hover {
 
 /* ?Contact-us */
 .bg-contact-us {
-  background: url("/assets/img/backgrounds/background-contact-us.jpg");
+  background: url("/assets/img/backgrounds/background-contact-us.png");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -136,7 +136,7 @@ a:hover {
 
 /* ?Contact-us page */
 .contact-us-page {
-  background: url("/assets/img/backgrounds/background-about-us.jpg");
+  background: url("/assets/img/backgrounds/background-about-us.png");
   background-position: center;
   background-size: cover;
   width: 101vw;
@@ -345,7 +345,7 @@ input::-webkit-input-placeholder {
 /* ?About-us-page */
 .aboutus-section,
 .step-section {
-  background: url("/assets/img/backgrounds/bg-341.jpg");
+  background: url("/assets/img/backgrounds/bg-341.png");
   background-size: cover;
   height: 100vh;
   color: #fff;
@@ -354,7 +354,7 @@ input::-webkit-input-placeholder {
 }
 
 .step-section {
-  background: url("/assets/img/backgrounds/bg-13.jpg");
+  background: url("/assets/img/backgrounds/bg-13.png");
   height: auto;
 }
 
@@ -367,7 +367,7 @@ input::-webkit-input-placeholder {
 }
 
 .bg-contact-short {
-  background: url("/assets/img/backgrounds/bg-321.jpg");
+  background: url("/assets/img/backgrounds/bg-321.png");
   background-size: contain;
 }
 

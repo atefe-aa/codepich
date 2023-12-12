@@ -1,6 +1,6 @@
 /* ?CodePich-CV */
 .codepich_cv {
-  background: url("/assets/img/backgrounds/img-342.jpg");
+  background: url("/assets/img/backgrounds/img-342.png");
   background-size: cover;
   background-position: center bottom;
   height: 100vh !important;
@@ -21,7 +21,7 @@
 }
 
 .cv_section {
-  background: url("/assets/img/backgrounds/img-218.jpg");
+  background: url("/assets/img/backgrounds/img-218.png");
   background-size: cover;
   background-position: top;
   margin-top: -1px;
