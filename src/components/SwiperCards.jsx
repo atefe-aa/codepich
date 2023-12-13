@@ -41,14 +41,14 @@ export default function SwiperCards() {
         ? Object.values(PROJECTS).map((project) =>
             project.bigImages?.map((image) => (
               <SwiperSlide key={image.id} className={styles.swiperSlide}>
-                <img src={image.src} alt={image.alt} />
+                <img loading="lazy" src={image.src} alt={image.alt} />
               </SwiperSlide>
             ))
           )
         : Object.values(PROJECTS).map((project) =>
             project.smallImages?.map((image) => (
               <SwiperSlide key={image.id} className={styles.swiperSlide}>
-                <img src={image.src} alt={image.alt} />
+                <img loading="lazy" src={image.src} alt={image.alt} />
               </SwiperSlide>
             ))
           )}
