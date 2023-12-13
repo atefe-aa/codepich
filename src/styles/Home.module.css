@@ -10,7 +10,12 @@
 }
 
 .bgMainPage {
-  background: url("/assets/img/backgrounds/bg-main.png");
+  /* background: url("/assets/img/backgrounds/bg-main.png"); */
+  background: rgb(10,2,19);
+background: -moz-linear-gradient(180deg, rgba(10,2,19,1) 0%, rgba(27,4,55,1) 35%, rgba(57,10,113,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(10,2,19,1) 0%, rgba(27,4,55,1) 35%, rgba(57,10,113,1) 100%);
+background: linear-gradient(180deg, rgba(10,2,19,1) 0%, rgba(27,4,55,1) 35%, rgba(57,10,113,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0a0213",endColorstr="#390a71",GradientType=1);
   background-position: center top;
   background-size: cover;
   color: #fff;
@@ -18,7 +23,12 @@
 }
 
 .bgServices {
-  background: url("/assets/img/backgrounds/bg-services-home.png");
+  /* background: url("/assets/img/backgrounds/bg-services-home.png"); */
+  background: rgb(57,10,113);
+background: -moz-linear-gradient(180deg, rgba(57,10,113,1) 0%, rgba(75,15,149,1) 35%, rgba(98,17,194,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(57,10,113,1) 0%, rgba(75,15,149,1) 35%, rgba(98,17,194,1) 100%);
+background: linear-gradient(180deg, rgba(57,10,113,1) 0%, rgba(75,15,149,1) 35%, rgba(98,17,194,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#390a71",endColorstr="#6211c2",GradientType=1);
   background-position: 100% 100%;
   background-size: cover;
   color: #fff;
@@ -30,7 +40,7 @@
   bottom: 1.5%;
 }
  .services {
-  background: url("/assets/img/backgrounds/img-322.png");
+  /* background: url("/assets/img/backgrounds/img-322.png"); */
   /* padding: 3% 4% 6% 4%; */
 } 
 
@@ -51,14 +61,30 @@
   cursor: pointer;
 }
 /* ?ABout Us Section */
-.about_us_section,
-.bg_team_cv {
-  background: url("/assets/img/backgrounds/background-about-us.png");
+.about_us_section{
+  /* background: url("/assets/img/backgrounds/background-about-us.png"); */
+  background: rgb(98,17,194);
+  background: -moz-linear-gradient(180deg, rgba(98,17,194,1) 0%, rgba(114,37,209,1) 35%, rgba(134,56,227,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(98,17,194,1) 0%, rgba(114,37,209,1) 35%, rgba(134,56,227,1) 100%);
+  background: linear-gradient(180deg, rgba(98,17,194,1) 0%, rgba(114,37,209,1) 35%, rgba(134,56,227,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6211c2",endColorstr="#8638e3",GradientType=1);
   background-position: center top;
   background-size: cover 100%;
   height: 100vh;
   color: #fff;
   width: 100vw;
+}
+.bg_team_cv{
+  background: rgb(134,56,227);
+background: -moz-linear-gradient(180deg, rgba(134,56,227,1) 0%, rgba(136,70,218,1) 35%, rgba(155,90,232,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(134,56,227,1) 0%, rgba(136,70,218,1) 35%, rgba(155,90,232,1) 100%);
+background: linear-gradient(180deg, rgba(134,56,227,1) 0%, rgba(136,70,218,1) 35%, rgba(155,90,232,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8638e3",endColorstr="#9b5ae8",GradientType=1);
+background-position: center top;
+background-size: cover 100%;
+height: 100vh;
+color: #fff;
+width: 100vw;
 }
 .slideSection{
   width:750px;

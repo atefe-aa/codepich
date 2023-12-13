@@ -267,29 +267,29 @@ export const PROJECTS = {
     bigImages: [
       {
         id: 1,
-        src: "/assets/img/projects/tarkhine/tarkhine1.png",
+        src: "/assets/img/projects/tarkhine/tarkhine1-min.png",
         alt: "tarkhine project",
       },
       {
         id: 2,
-        src: "/assets/img/projects/tarkhine/tarkhine2.png",
+        src: "/assets/img/projects/tarkhine/tarkhine2-min.png",
         alt: "tarkhine project",
       },
       {
         id: 3,
-        src: "/assets/img/projects/tarkhine/tarkhine3.png",
+        src: "/assets/img/projects/tarkhine/tarkhine3-min.png",
         alt: "tarkhine project",
       },
     ],
     smallImages: [
       {
         id: 4,
-        src: "/assets/img/projects/tarkhine/tarkhine1-s.png",
+        src: "/assets/img/projects/tarkhine/tarkhine1-s-min.png",
         alt: "tarkhine project",
       },
       {
         id: 5,
-        src: "/assets/img/projects/tarkhine/tarkhine2-s.png",
+        src: "/assets/img/projects/tarkhine/tarkhine2-s-min.png",
         alt: "tarkhine project",
       },
     ],
@@ -344,39 +344,39 @@ export const PROJECTS = {
     bigImages: [
       {
         id: 12,
-        src: "/assets/img/projects/worldWise/worldwise3.png",
+        src: "/assets/img/projects/worldWise/worldwise3-min.png",
         alt: "world wise project",
       },
       {
         id: 13,
-        src: "/assets/img/projects/worldWise/worldwise2.png",
+        src: "/assets/img/projects/worldWise/worldwise2-min.png",
         alt: "world wise project",
       },
       {
         id: 14,
-        src: "/assets/img/projects/worldWise/worldwise1.png",
+        src: "/assets/img/projects/worldWise/worldwise1-min.png",
         alt: "world wise project",
       },
       {
         id: 15,
-        src: "/assets/img/projects/worldWise/worldwise4.png",
+        src: "/assets/img/projects/worldWise/worldwise4-min.png",
         alt: "world wise project",
       },
       {
         id: 16,
-        src: "/assets/img/projects/worldWise/worldwise5.PNG",
+        src: "/assets/img/projects/worldWise/worldwise5-min.PNG",
         alt: "world wise project",
       },
     ],
     smallImages: [
       {
         id: 28,
-        src: "/assets/img/projects/worldWise/worldwise3-s.png",
+        src: "/assets/img/projects/worldWise/worldwise3-s-min.png",
         alt: "world wise project",
       },
       {
         id: 30,
-        src: "/assets/img/projects/worldWise/worldwise2-s.png",
+        src: "/assets/img/projects/worldWise/worldwise2-s-min.png",
         alt: "world wise project",
       },
     ],
