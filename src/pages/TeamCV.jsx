@@ -4,6 +4,7 @@ import Project from "../components/Project";
 import styles from "../styles/TeamCV.module.css";
 import { PROJECTS } from "../utils/consts";
 import { useState } from "react";
+import ContactDiv from "../components/ContactDiv";
 
 function TeamCV() {
   const [visibleProjects, setVisibleProjects] = useState(4);
@@ -156,6 +157,7 @@ function TeamCV() {
             </div>
           </div>
         </div>
+        <ContactDiv />
       </section>
     </>
   );

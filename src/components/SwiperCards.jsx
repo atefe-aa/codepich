@@ -11,6 +11,7 @@ import styles from "../styles/SwiperCards.module.css";
 import { EffectCards, Navigation } from "swiper/modules";
 import { useEffect, useState } from "react";
 import { PROJECTS } from "../utils/consts";
+import LazyImage from "./LazyImage";
 
 export default function SwiperCards() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -41,14 +42,14 @@ export default function SwiperCards() {
         ? Object.values(PROJECTS).map((project) =>
             project.bigImages?.map((image) => (
               <SwiperSlide key={image.id} className={styles.swiperSlide}>
-                <img loading="lazy" src={image.src} alt={image.alt} />
+                <LazyImage image={image} />
               </SwiperSlide>
             ))
           )
         : Object.values(PROJECTS).map((project) =>
             project.smallImages?.map((image) => (
               <SwiperSlide key={image.id} className={styles.swiperSlide}>
-                <img loading="lazy" src={image.src} alt={image.alt} />
+                <LazyImage image={image} />
               </SwiperSlide>
             ))
           )}

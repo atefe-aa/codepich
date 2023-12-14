@@ -10,6 +10,7 @@ import styles from "../styles/Modal.module.css";
 import { useOutsideClick } from "../hooks/useOutsideClick";
 import { Navigate, useParams } from "react-router-dom";
 import { PROJECTS } from "../utils/consts";
+import LazyImage from "./LazyImage";
 function Modal() {
   const ref = useOutsideClick(() => history.back(), true);
   const { projectName } = useParams();
@@ -31,7 +32,8 @@ function Modal() {
         <Swiper {...swiperProps}>
           {data.bigImages?.map((image) => (
             <SwiperSlide key={image.id} className={styles.swiperSlide}>
-              <img src={image.src} alt={image.alt} />
+              <LazyImage image={image} />
+              {/* <img src={image.src} alt={image.alt} /> */}
             </SwiperSlide>
           ))}
         </Swiper>

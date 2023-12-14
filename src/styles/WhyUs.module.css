@@ -78,7 +78,7 @@
 }
 .line {
   width: 20%;
-  height: 1px;
+  height: 2px;
   background-color: #d5d5d5;
 }
 .lineTop {
@@ -88,8 +88,8 @@
   margin-top: 20px;
 }
 .whyUsP {
-  border-left: #d5d5d5 solid 1px;
-  border-right: #d5d5d5 solid 1px;
+  border-left: #d5d5d5 solid 2px;
+  border-right: #d5d5d5 solid 2px;
   width: 60%;
   padding: 1rem;
 }
@@ -112,14 +112,14 @@
   font-size: 1.2rem;
 }
 .whys1 {
-  border-left: solid 1px #d5d5d5;
+  border-left: solid 2px #d5d5d5;
   grid-area: whys1;
 }
 .whys2 {
   grid-area: whys2;
 }
 .whys3 {
-  border-left: solid 1px #d5d5d5;
+  border-left: solid 2px #d5d5d5;
   grid-area: whys3;
   height: 100%;
 }

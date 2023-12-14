@@ -15,6 +15,7 @@ import "../styles/swiper.css";
 import { Mousewheel } from "swiper/modules";
 import SwiperCards from "../components/SwiperCards";
 import Footer from "../components/Footer";
+import ContactDiv from "../components/ContactDiv";
 
 function Home() {
   return (
@@ -185,6 +186,13 @@ function Home() {
           <section className={styles.bg_team_cv}>
             <div className={styles.slideSection}>
               <SwiperCards />
+            </div>
+          </section>
+        </SwiperSlide>
+        <SwiperSlide>
+          <section className={styles.bgContactDiv}>
+            <div className={styles.contactDiv}>
+              <ContactDiv />
             </div>
           </section>
         </SwiperSlide>

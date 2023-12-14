@@ -1,26 +1,24 @@
-import { useEffect, useRef } from 'react';
+import { useState } from "react";
+import Spinner from "./Spinner";
 
-function LazyImage({ src, alt , className}) {
-  const imageRef = useRef();
+function LazyImage({ image, className = "" }) {
+  const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          imageRef.current.src = src;
-          observer.unobserve(imageRef.current);
-        }
-      });
-    });
-
-    observer.observe(imageRef.current);
-
-    return () => {
-      observer.disconnect();
-    };
-  }, [src]);
-
-  return <img ref={imageRef} alt={alt} className={className} />;
+  const handleImageLoad = () => {
+    setIsLoading(false);
+  };
+  return (
+    <>
+      {isLoading ? <Spinner /> : null}
+      <img
+        className={className}
+        onLoad={handleImageLoad}
+        loading="lazy"
+        src={image.src}
+        alt={image.alt}
+      />
+    </>
+  );
 }
 
 export default LazyImage;

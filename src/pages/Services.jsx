@@ -1,3 +1,5 @@
+import ContactDiv from "../components/ContactDiv";
+
 function Services() {
   return (
     <>
@@ -86,6 +88,7 @@ function Services() {
               </div>
             </div>
           </div>
+          <ContactDiv />
         </div>
       </section>
     </>
