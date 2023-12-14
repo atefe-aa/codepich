@@ -1,17 +1,19 @@
 import { useMoveBack } from "../hooks/useMoveBack";
 
-
 function PageNotFound() {
   const moveBack = useMoveBack();
 
   return (
-    <main className="flex h-[100vh] items-center justify-center  ">
-      <div className="flex-[0 1 96rem] rounded-md border-[1px] bg-gray-100 p-[4.8rem] text-center ">
-        <div>صفحه مورد نظر یافت نشد!</div>
+    <main
+      className="d-flex align-items-center justify-content-center "
+      style={{ height: "100vh", backgroundColor: "#A553F4" }}
+    >
+      <div className=" rounded border text-center p-5 text-white ">
+        <div className="mb-5">صفحه مورد نظر یافت نشد!</div>
         <button
           onClick={moveBack}
-          className=" shadow-inner-lg mt-4 rounded-full bg-[var(--Green-Green-Tint-6)] px-5 py-2 "
-          size="large"
+          className="btn"
+          style={{ backgroundColor: "purple", color: "white" }}
         >
           &larr; بازگشت
         </button>
