@@ -15,7 +15,7 @@ function PageNotFound() {
           className="btn"
           style={{ backgroundColor: "purple", color: "white" }}
         >
-          &larr; بازگشت
+         بازگشت  &larr;
         </button>
       </div>
     </main>
